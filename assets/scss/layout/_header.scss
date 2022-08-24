@@ -1,0 +1,92 @@
+@import '../responsive';
+
+.main-header{
+    position: fixed;
+    width: 100%;
+    z-index: 9;
+}
+
+.contact-header{
+    display: flex;
+    justify-content: right;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.37);
+}
+
+.contact-items {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    margin-right: 10%;
+
+    @include for-mobile{
+        width: 100%;
+        margin-right: 0;
+    }
+}
+
+.contact-items a{
+    color: #FFFFFF;
+    padding: 5px;
+}
+
+.contact-items a:hover{
+    color: #C78529;
+    transition: all 500ms ease;
+}
+
+.contact-items .fa-solid{
+    padding-right: 7px;
+}
+
+.menu-header{
+    display: flex;
+    height: 100px;
+    padding: 20px 120px;
+    margin: auto 35px;
+    justify-content: space-between;
+
+    @include for-mobile{
+        margin: 0 0;
+        padding: 0 5px;
+    }
+    @media (max-width: 900px){
+        margin: 0 0;
+        padding: 0 5px;
+    }
+}
+
+.logo-container{
+    display: flex;
+    align-items: center;
+}
+
+.menu-items{
+    display:flex;
+    list-style: none;
+    justify-content: space-between;
+    width: 50%;
+    align-items: center;
+}
+
+.menu-items a{
+    color: #FFFFFF;
+    padding: 5px;
+}
+
+.contact-button{
+    align-items: center;
+    display: flex;
+    
+}
+
+.contact-button a{
+    padding:15px;
+    background-color: #C78529;
+    color: #FFFFFF;
+    font-weight: 700;
+    transition: all .3s;
+}
+
+// .contact-button a:hover{
+// }
