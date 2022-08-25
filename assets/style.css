@@ -1,7 +1,7 @@
-* {
+body {
   margin: 0;
   padding: 0;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat Alternates", sans-serif;
   text-decoration: none;
   font-weight: 500;
   box-sizing: border-box;
@@ -36,6 +36,76 @@ html {
   height: 100%;
   object-fit: cover;
 }
+@media (max-width: 767px) {
+  .banner .banner-img {
+    background-size: cover;
+    height: 100vh;
+  }
+}
+
+.text-container .description li i {
+  background-image: url("../../assets/images/checkmark.png");
+  height: 24px;
+  width: 24px;
+  background-size: cover;
+  position: absolute;
+  transform: translate(0, -10%);
+}
+
+.contact-items .fa-phone {
+  padding-right: 7px;
+}
+
+.contact-items .fa-envelope {
+  padding-right: 7px;
+}
+
+.menu-items .fa-angle-down {
+  padding-left: 5px;
+  padding-top: 2px;
+  font-size: 11px;
+}
+
+.book-home-visit {
+  align-items: center;
+  display: flex;
+}
+
+.book-home-visit a {
+  padding: 15px;
+  background-color: #C78529;
+  color: #FFFFFF;
+  font-weight: 500;
+  transition: all 0.3s;
+  text-decoration: none;
+}
+
+.book-home-visit a:hover {
+  background-color: #c27100;
+}
+
+.text-container h1 {
+  padding: 0 35px;
+  font-size: 52px;
+  margin-bottom: 10px;
+}
+
+.description {
+  margin: 0;
+  list-style: none;
+  padding-top: 15px;
+}
+
+.description li {
+  padding-bottom: 20px;
+}
+
+.description li span {
+  padding-left: 30px;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  font-size: 17px;
+}
 
 .main-header {
   position: fixed;
@@ -46,7 +116,6 @@ html {
 .contact-header {
   display: flex;
   justify-content: right;
-  padding: 10px;
   background-color: rgba(0, 0, 0, 0.37);
 }
 
@@ -55,17 +124,23 @@ html {
   list-style: none;
   justify-content: space-between;
   margin-right: 10%;
+  font-weight: 150;
+  font-family: "Ubuntu", sans-serif;
 }
 @media (max-width: 767px) {
   .contact-items {
     width: 100%;
-    margin-right: 0;
   }
+}
+
+.contact-items li {
+  padding-left: 20px;
 }
 
 .contact-items a {
   color: #FFFFFF;
-  padding: 5px;
+  padding: 0 5px;
+  text-decoration: none;
 }
 
 .contact-items a:hover {
@@ -73,24 +148,16 @@ html {
   transition: all 500ms ease;
 }
 
-.contact-items .fa-solid {
-  padding-right: 7px;
-}
-
 .menu-header {
   display: flex;
-  height: 100px;
-  padding: 20px 120px;
+  height: 50px;
+  padding: 15px 120px;
   margin: auto 35px;
   justify-content: space-between;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
 }
 @media (max-width: 767px) {
-  .menu-header {
-    margin: 0 0;
-    padding: 0 5px;
-  }
-}
-@media (max-width: 900px) {
   .menu-header {
     margin: 0 0;
     padding: 0 5px;
@@ -111,21 +178,26 @@ html {
 }
 
 .menu-items a {
+  display: inline-block;
+  position: relative;
   color: #FFFFFF;
-  padding: 5px;
+  padding: 9px 5px;
+  text-decoration: none;
 }
 
-.contact-button {
-  align-items: center;
-  display: flex;
-}
-
-.contact-button a {
-  padding: 15px;
+.menu-items a:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
   background-color: #C78529;
-  color: #FFFFFF;
-  font-weight: 700;
-  transition: all 0.3s;
+  transition: 0.3s;
+}
+
+.menu-items a:hover::after {
+  width: 100%;
 }
 
 .banner {
@@ -134,12 +206,42 @@ html {
 
 .banner::after {
   content: "";
-  background-color: rgba(0, 0, 0, 0.2784313725);
+  background-color: rgba(0, 0, 0, 0.42);
   position: absolute;
   top: 0;
   left: 0;
   height: 100%;
   width: 100%;
+}
+
+.banner-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.banner-text-container {
+  height: 55%;
+  width: 75%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  color: #FFFFFF;
+  margin-top: 165px;
+  margin-left: 160px;
+}
+
+.text-container {
+  width: 60%;
+  height: 100%;
+}
+
+.empty-container {
+  width: 40%;
+  height: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */

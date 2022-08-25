@@ -9,7 +9,7 @@
 .contact-header{
     display: flex;
     justify-content: right;
-    padding: 10px;
+    //padding: 10px;
     background-color: rgba(0, 0, 0, 0.37);
 }
 
@@ -18,16 +18,23 @@
     list-style: none;
     justify-content: space-between;
     margin-right: 10%;
+    font-weight: 150;
+    font-family: 'Ubuntu', sans-serif;
 
     @include for-mobile{
         width: 100%;
-        margin-right: 0;
+        // margin-right: 10px;
+        // margin-left: 10px;
     }
+}
+.contact-items li{
+    padding-left: 20px;
 }
 
 .contact-items a{
     color: #FFFFFF;
-    padding: 5px;
+    padding: 0 5px;
+    text-decoration: none;
 }
 
 .contact-items a:hover{
@@ -35,25 +42,23 @@
     transition: all 500ms ease;
 }
 
-.contact-items .fa-solid{
-    padding-right: 7px;
-}
-
 .menu-header{
     display: flex;
-    height: 100px;
-    padding: 20px 120px;
+    height: 50px;
+    padding: 15px 120px;
     margin: auto 35px;
     justify-content: space-between;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 300;
 
     @include for-mobile{
         margin: 0 0;
         padding: 0 5px;
     }
-    @media (max-width: 900px){
-        margin: 0 0;
-        padding: 0 5px;
-    }
+//     @include for-small-screen{
+//         margin: 0 0;
+//         padding: 0 5px;
+//     }
 }
 
 .logo-container{
@@ -70,23 +75,24 @@
 }
 
 .menu-items a{
+    display: inline-block;
+    position: relative;
     color: #FFFFFF;
-    padding: 5px;
+    padding: 9px 5px;
+    text-decoration: none;
 }
 
-.contact-button{
-    align-items: center;
-    display: flex;
-    
-}
-
-.contact-button a{
-    padding:15px;
+.menu-items a:after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
     background-color: #C78529;
-    color: #FFFFFF;
-    font-weight: 700;
-    transition: all .3s;
+    transition: 0.3s;
 }
 
-// .contact-button a:hover{
-// }
+.menu-items a:hover::after{
+    width: 100%
+}

@@ -1,0 +1,18 @@
+.book-home-visit{
+    align-items: center;
+    display: flex;   
+}
+
+.book-home-visit a{
+    padding:15px;
+    background-color: #C78529;
+    color: #FFFFFF;
+    font-weight: 500;
+    transition: all .3s;
+    text-decoration: none;
+}
+
+.book-home-visit a:hover{
+    background-color: #c27100;
+
+}
