@@ -16,3 +16,26 @@
     background-color: #c27100;
 
 }
+
+.see-our-products{
+    align-items: center;
+    display: flex;
+    padding-top: 18px; 
+    padding-left: 35px;
+}
+
+.see-our-products a{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    padding: 12px 20px;
+    background-color: #C78529;
+    color: #FFFFFF;
+    transition: all .3s;
+    text-decoration: none;
+}
+
+.see-our-products a:hover{
+    background-color: #c27100;
+
+}
