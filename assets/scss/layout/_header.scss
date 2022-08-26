@@ -9,8 +9,11 @@
 .contact-header{
     display: flex;
     justify-content: right;
-    //padding: 10px;
     background-color: rgba(0, 0, 0, 0.37);
+}
+
+.contact-header .hide{
+    display: none;
 }
 
 .contact-items {
@@ -44,6 +47,8 @@
 
 .menu-header{
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
     height: 50px;
     padding: 15px 110px;
     margin: auto 35px;
