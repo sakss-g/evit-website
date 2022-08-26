@@ -243,6 +243,7 @@ html {
   flex-direction: column;
   justify-content: space-between;
   line-height: 1.5;
+  font-family: "Ubuntu", sans-serif;
 }
 
 .video-heading-description p {
@@ -256,6 +257,7 @@ html {
 .video-description li {
   list-style: none;
   padding-bottom: 20px;
+  font-family: "Ubuntu", sans-serif;
 }
 
 .video-description li span {
