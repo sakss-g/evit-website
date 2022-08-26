@@ -31,16 +31,12 @@ html {
     font-size: 100%;
   }
 }
-.banner .banner-img {
-  width: 100%;
+.banner-section .banner-img {
+  width: 1600px;
   height: 100%;
+  left: -10px;
+  background-position: center;
   object-fit: cover;
-}
-@media (max-width: 767px) {
-  .banner .banner-img {
-    background-size: cover;
-    height: 100vh;
-  }
 }
 
 .text-container .description li i {
@@ -84,11 +80,20 @@ html {
   background-color: #c27100;
 }
 
+.banner-buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 55%;
+  height: 55px;
+  margin-top: 25px;
+  margin-left: 40px;
+}
+
 .see-our-products {
   align-items: center;
   display: flex;
-  padding-top: 18px;
-  padding-left: 35px;
+  margin-right: 0;
+  width: auto;
 }
 
 .see-our-products a {
@@ -104,6 +109,29 @@ html {
 
 .see-our-products a:hover {
   background-color: #c27100;
+}
+
+.book-home-visit-banner {
+  align-items: center;
+  display: flex;
+  margin-right: 0;
+  width: auto;
+}
+
+.book-home-visit-banner a {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+  padding: 12px 20px;
+  border: 2px solid #FFFFFF;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.book-home-visit-banner a:hover {
+  background-color: #C78529;
+  border: #C78529;
+  transition: all 500ms ease;
 }
 
 .text-container h1 {
@@ -173,7 +201,7 @@ html {
 .menu-header {
   display: flex;
   height: 50px;
-  padding: 15px 120px;
+  padding: 15px 110px;
   margin: auto 35px;
   justify-content: space-between;
   font-family: "Ubuntu", sans-serif;
@@ -197,6 +225,7 @@ html {
   justify-content: space-between;
   width: 50%;
   align-items: center;
+  margin: 0;
 }
 
 .menu-items a {
@@ -211,7 +240,7 @@ html {
   content: "";
   position: absolute;
   left: 0;
-  bottom: 0;
+  bottom: 4px;
   width: 0;
   height: 2px;
   background-color: #C78529;
@@ -222,17 +251,63 @@ html {
   width: 100%;
 }
 
-.banner {
-  position: relative;
+.sub-menu {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  min-width: 160px;
+  z-index: 1;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 18px 10px;
 }
 
-.banner::after {
+.sub-menu li {
+  list-style: none;
+}
+
+.sub-menu a {
+  color: #000;
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+}
+
+.sub-menu a:hover {
+  text-decoration: none;
+  color: #C78529;
+  transition: all 500ms ease;
+}
+
+.sub-menu a:after {
+  background: none;
+}
+
+.indoor:hover .sub-menu {
+  display: block;
+}
+
+.outdoor:hover .sub-menu {
+  display: block;
+}
+
+.outdoor .sub-menu li {
+  list-style: none;
+}
+
+.banner-section {
+  position: relative;
+  overflow: hidden;
+}
+
+.banner-section::after {
   content: "";
   background-color: rgba(0, 0, 0, 0.42);
   position: absolute;
   top: 0;
   left: 0;
-  height: 100%;
+  height: 99.5%;
   width: 100%;
 }
 

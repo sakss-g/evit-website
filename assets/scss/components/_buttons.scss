@@ -1,3 +1,5 @@
+@import '../responsive';
+
 .book-home-visit{
     align-items: center;
     display: flex;   
@@ -17,11 +19,20 @@
 
 }
 
+.banner-buttons{
+    display: flex;
+    justify-content: space-between;
+    width: 55%;
+    height: 55px;
+    margin-top: 25px;
+    margin-left: 40px;
+}
+
 .see-our-products{
     align-items: center;
     display: flex;
-    padding-top: 18px; 
-    padding-left: 35px;
+    margin-right: 0;
+    width: auto;
 }
 
 .see-our-products a{
@@ -38,4 +49,27 @@
 .see-our-products a:hover{
     background-color: #c27100;
 
+}
+
+.book-home-visit-banner{
+    align-items: center;
+    display: flex;
+    margin-right: 0;
+    width: auto;
+}
+
+.book-home-visit-banner a{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    padding: 12px 20px;
+    border: 2px solid #FFFFFF;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.book-home-visit-banner a:hover{
+    background-color: #C78529;
+    border: #C78529;
+    transition: all 500ms ease;
 }

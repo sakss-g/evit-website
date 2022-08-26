@@ -1,14 +1,16 @@
 @import '../responsive';
 
-.banner .banner-img{
-    width: 100%;
+.banner-section .banner-img{
+    width: 1600px;;
     height: 100%;
+    left: -10px;
+    background-position: center;
     object-fit: cover;
 
-    @include for-mobile{
-        background-size: cover;
-        height: 100vh;
-    }
+    // @include for-mobile{
+    //     background-size: cover;
+    //     height: 100vh;
+    // }
 
     // @include for-small-screen{
     //     background-size: cover;
@@ -23,5 +25,4 @@
     background-size: cover;
     position: absolute;
     transform: translate(0,-10%);
-    // display: contents;
 }

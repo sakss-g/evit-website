@@ -45,7 +45,7 @@
 .menu-header{
     display: flex;
     height: 50px;
-    padding: 15px 120px;
+    padding: 15px 110px;
     margin: auto 35px;
     justify-content: space-between;
     font-family: 'Ubuntu', sans-serif;
@@ -72,6 +72,7 @@
     justify-content: space-between;
     width: 50%;
     align-items: center;
+    margin: 0;
 }
 
 .menu-items a{
@@ -86,7 +87,7 @@
     content: "";
     position: absolute;
     left: 0;
-    bottom: 0;
+    bottom: 4px;
     width: 0;
     height: 2px;
     background-color: #C78529;
@@ -94,5 +95,50 @@
 }
 
 .menu-items a:hover::after{
-    width: 100%
+    width: 100%;
+}
+
+.sub-menu {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 160px;
+    z-index: 1;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 18px 10px;
+}
+
+.sub-menu li{
+    list-style: none;
+}
+
+.sub-menu a {
+    color: #000;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+}
+
+.sub-menu a:hover{
+    text-decoration: none;
+    color: #C78529;
+    transition: all 500ms ease;
+}
+
+.sub-menu a:after{
+    background: none;
+}
+
+.indoor:hover .sub-menu {
+    display: block;
+}
+
+.outdoor:hover .sub-menu {
+    display: block;
+}
+
+.outdoor .sub-menu li{
+    list-style: none;
 }
