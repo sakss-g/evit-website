@@ -26,17 +26,28 @@
     margin-top: 30px;
     margin-left: 80px;
     display: flex;
-        z-index: 1;
+    z-index: 1;
 }
 
 .video-video-container{
     height: 100%;
     width:50%;
-    // background-color: darkmagenta;
+
+    // &::after{
+    //     content: '';
+    //     background-color: rgba(16, 8, 8, 0.44);
+    //     position: absolute;
+    //     top:0;
+    //     left:0;
+    //     height:100%;
+    //     width:100%;
+    //     z-index: 2;
+    // }
 }
 
 .video-text-container{
     height: 100%;
     width:50%;
+    
     // background-color: darkcyan;
 }

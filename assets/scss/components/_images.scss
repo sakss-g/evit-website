@@ -4,7 +4,6 @@
     max-width: 1600px;;
     height: 100%;
     left: -10px;
-    background-position: center;
     object-fit: cover;
 
     // @include for-mobile{
@@ -20,6 +19,21 @@
 
 .text-container .description li i{
     background-image: url('../../assets/images/checkmark.png');
+    height: 24px;
+    width: 24px;
+    background-size: cover;
+    position: absolute;
+    transform: translate(0,-10%);
+}
+
+.video-video-container img{
+    height: 66%;
+    padding: 48px 45px;
+    background-position: center;
+}
+
+.video-text-container .video-description li i{
+    background-image: url('../../assets/images/circle-checkmark.png');
     height: 24px;
     width: 24px;
     background-size: cover;
