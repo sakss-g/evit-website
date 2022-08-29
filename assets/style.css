@@ -47,19 +47,31 @@ html {
   transform: translate(0, -10%);
 }
 
-.video-video-container img {
+.video-video-container .image {
+  position: relative;
+  background-image: url("../../assets/images/video-img.png");
   height: 66%;
-  padding: 48px 45px;
+  width: auto;
+  margin: 48px 45px;
   background-position: center;
+  background-size: cover;
 }
 
-.video-text-container .video-description li i {
+.video-description li i {
   background-image: url("../../assets/images/circle-checkmark.png");
   height: 24px;
   width: 24px;
   background-size: cover;
   position: absolute;
   transform: translate(0, -10%);
+}
+
+.video-button {
+  background-image: url("../../assets/images/video-button.png");
+  height: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .contact-items .fa-phone {
@@ -268,6 +280,32 @@ html {
   font-size: 17px;
 }
 
+.review-heading {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  height: 20%;
+}
+
+.review-heading h1 {
+  font-size: 44px;
+}
+
+.idea-solution-heading p {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+}
+
+.idea-solution-heading h1 {
+  margin: 0;
+}
+
+.idea-img {
+  height: 111px;
+}
+
 .main-header {
   position: fixed;
   width: 100%;
@@ -468,7 +506,7 @@ html {
 }
 .video-section::after {
   content: "";
-  background-color: rgba(248, 248, 248, 0.42);
+  background-color: rgba(248, 248, 248, 0.7);
   position: absolute;
   top: 0;
   left: 0;
@@ -493,6 +531,86 @@ html {
 .video-text-container {
   height: 100%;
   width: 50%;
+}
+
+.image .video-bg-overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(16, 8, 8, 0.44);
+}
+
+.video-bg-overlay:hover {
+  cursor: pointer;
+}
+
+.video-button-container {
+  padding: 150px 243px 150px 250px;
+  height: 100px;
+  width: 100px;
+}
+
+.review-section {
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  height: 55%;
+  top: 180vh;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: darkseagreen;
+}
+
+.review-container {
+  width: 90%;
+  height: 80%;
+  margin-top: 25px;
+  margin-bottom: 45px;
+  margin-left: 80px;
+  display: flex;
+  border: solid 3px #CCCCCC;
+}
+
+.idea-solution-section {
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 235vh;
+  left: 0;
+  z-index: 1;
+  display: flex;
+}
+.idea-solution-section::after {
+  content: "";
+  background-color: rgba(248, 248, 248, 0.7);
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.idea-solution-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 50px;
+}
+
+.idea-solution-heading {
+  height: 20%;
+  background-color: burlywood;
+  text-align: center;
+  z-index: 1;
+}
+
+.idea-solution-body {
+  height: 80%;
+  background-color: cadetblue;
+  z-index: 1;
+  display: flex;
+  padding: 20px 180px;
 }
 
 /*# sourceMappingURL=style.css.map */
