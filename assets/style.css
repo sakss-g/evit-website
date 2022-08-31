@@ -74,6 +74,10 @@ html {
   background-position: center;
 }
 
+.idea-img {
+  height: 111px;
+}
+
 .contact-items .fa-phone {
   padding-right: 7px;
 }
@@ -88,12 +92,7 @@ html {
   font-size: 11px;
 }
 
-.book-home-visit {
-  align-items: center;
-  display: flex;
-}
-
-.book-home-visit a {
+.book a {
   padding: 15px;
   background-color: #C78529;
   color: #FFFFFF;
@@ -102,8 +101,20 @@ html {
   text-decoration: none;
 }
 
-.book-home-visit a:hover {
+.book a:hover {
   background-color: #c27100;
+}
+
+.book-bg a:hover {
+  background-color: #C78529;
+  border: #C78529;
+  transition: all 500ms ease;
+  color: #FFFFFF;
+}
+
+.book-home-visit {
+  align-items: center;
+  display: flex;
 }
 
 .banner-buttons {
@@ -120,21 +131,6 @@ html {
   display: flex;
   margin-right: 0;
   width: auto;
-}
-
-.see-our-products a {
-  font-family: "Ubuntu", sans-serif;
-  font-weight: 400;
-  font-size: 17px;
-  padding: 12px 20px;
-  background-color: #C78529;
-  color: #FFFFFF;
-  transition: all 0.3s;
-  text-decoration: none;
-}
-
-.see-our-products a:hover {
-  background-color: #c27100;
 }
 
 .book-home-visit-banner {
@@ -154,16 +150,10 @@ html {
   text-decoration: none;
 }
 
-.book-home-visit-banner a:hover {
-  background-color: #C78529;
-  border: #C78529;
-  transition: all 500ms ease;
-}
-
 .video-text-buttons {
   display: flex;
   justify-content: space-between;
-  width: 47%;
+  width: 48%;
   height: 55px;
   margin-top: 15px;
   margin-left: 40px;
@@ -174,21 +164,6 @@ html {
   display: flex;
   margin-right: 0;
   width: auto;
-}
-
-.read-more-about-us a {
-  font-family: "Ubuntu", sans-serif;
-  font-weight: 400;
-  font-size: 17px;
-  padding: 12px 15px;
-  background-color: #C78529;
-  color: #FFFFFF;
-  transition: all 0.3s;
-  text-decoration: none;
-}
-
-.read-more-about-us a:hover {
-  background-color: #c27100;
 }
 
 .book-home-visit-video {
@@ -202,17 +177,17 @@ html {
   font-family: "Ubuntu", sans-serif;
   font-weight: 400;
   font-size: 17px;
-  padding: 11px 15px;
+  padding: 13px 15px;
   border: 2px solid #000;
   color: #000;
   text-decoration: none;
+  margin-left: 10px;
 }
 
-.book-home-visit-video a:hover {
-  background-color: #C78529;
-  border: #C78529;
-  transition: all 500ms ease;
-  color: #FFFFFF;
+.book-home-visit-idea {
+  display: flex;
+  justify-content: center;
+  padding: 5px 0;
 }
 
 .text-container h1 {
@@ -300,10 +275,30 @@ html {
 
 .idea-solution-heading h1 {
   margin: 0;
+  font-size: 38px;
 }
 
-.idea-img {
-  height: 111px;
+.idea-box h3 {
+  text-align: center;
+  line-height: 1.5;
+  font-size: 18px;
+}
+
+.idea-box p {
+  text-align: center;
+  line-height: 1.5;
+  font-size: 17px;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: lighter;
+}
+
+.dashed-line::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 55px;
+  border-top: 2px dashed #000;
+  transform: translate(120px, 50px);
 }
 
 .main-header {
@@ -575,7 +570,7 @@ html {
   overflow: hidden;
   position: absolute;
   width: 100%;
-  height: 100%;
+  height: 90%;
   top: 235vh;
   left: 0;
   z-index: 1;
@@ -595,22 +590,32 @@ html {
   display: flex;
   flex-direction: column;
   width: 100%;
-  padding: 50px;
+  padding: 50px 0;
 }
 
 .idea-solution-heading {
   height: 20%;
-  background-color: burlywood;
   text-align: center;
   z-index: 1;
 }
 
 .idea-solution-body {
-  height: 80%;
-  background-color: cadetblue;
   z-index: 1;
+}
+
+.idea-wrapper {
+  height: 80%;
   display: flex;
+  justify-content: center;
   padding: 20px 180px;
+}
+
+.idea-box .idea {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 10px;
+  width: 235px;
 }
 
 /*# sourceMappingURL=style.css.map */
