@@ -1,0 +1,30 @@
+.inspiration-heading h4{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: unset;
+    margin-bottom: 10px;
+}
+
+.inspiration-heading h1{
+    width: 40%;
+    font-size: 36px;
+    margin-top: 0;
+    line-height: 1.3;
+}
+
+.inspiration-category ul{
+    width: 45%;
+    padding: 0;
+}
+
+.inspiration-category ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.inspiration-category a{
+    text-decoration: none;
+    color: #000000;
+}

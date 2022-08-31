@@ -187,7 +187,9 @@ html {
 .book-home-visit-idea {
   display: flex;
   justify-content: center;
-  padding: 5px 0;
+  padding: 25px 0 5px 0;
+  font-weight: 400;
+  font-size: 15px;
 }
 
 .text-container h1 {
@@ -263,19 +265,21 @@ html {
 }
 
 .review-heading h1 {
-  font-size: 44px;
+  padding-top: 30px;
+  font-size: 36px;
 }
 
 .idea-solution-heading p {
   margin-top: 20px;
   margin-bottom: 10px;
   font-family: "Ubuntu", sans-serif;
-  font-weight: 300;
+  font-weight: 400;
+  font-size: 16px;
 }
 
 .idea-solution-heading h1 {
   margin: 0;
-  font-size: 38px;
+  font-size: 36px;
 }
 
 .idea-box h3 {
@@ -287,7 +291,9 @@ html {
 .idea-box p {
   text-align: center;
   line-height: 1.5;
-  font-size: 17px;
+  padding: 0 15px;
+  margin: 0;
+  font-size: 16px;
   font-family: "Ubuntu", sans-serif;
   font-weight: lighter;
 }
@@ -295,10 +301,41 @@ html {
 .dashed-line::after {
   content: "";
   position: absolute;
-  height: 2px;
-  width: 55px;
+  height: 1px;
+  width: 80px;
   border-top: 2px dashed #000;
   transform: translate(120px, 50px);
+}
+
+.inspiration-heading h4 {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: unset;
+  margin-bottom: 10px;
+}
+
+.inspiration-heading h1 {
+  width: 40%;
+  font-size: 36px;
+  margin-top: 0;
+  line-height: 1.3;
+}
+
+.inspiration-category ul {
+  width: 45%;
+  padding: 0;
+}
+
+.inspiration-category ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.inspiration-category a {
+  text-decoration: none;
+  color: #000000;
 }
 
 .main-header {
@@ -548,7 +585,7 @@ html {
   overflow: hidden;
   position: absolute;
   width: 100%;
-  height: 55%;
+  height: 60%;
   top: 180vh;
   left: 0;
   display: flex;
@@ -557,11 +594,11 @@ html {
 }
 
 .review-container {
-  width: 90%;
-  height: 80%;
-  margin-top: 25px;
+  width: 83%;
+  height: 50%;
+  margin-top: 55px;
   margin-bottom: 45px;
-  margin-left: 80px;
+  margin-left: 125px;
   display: flex;
   border: solid 3px #CCCCCC;
 }
@@ -571,7 +608,7 @@ html {
   position: absolute;
   width: 100%;
   height: 90%;
-  top: 235vh;
+  top: 240vh;
   left: 0;
   z-index: 1;
   display: flex;
@@ -597,6 +634,7 @@ html {
   height: 20%;
   text-align: center;
   z-index: 1;
+  padding: 20px;
 }
 
 .idea-solution-body {
@@ -607,7 +645,7 @@ html {
   height: 80%;
   display: flex;
   justify-content: center;
-  padding: 20px 180px;
+  padding: 20px 180px 0;
 }
 
 .idea-box .idea {
@@ -615,7 +653,40 @@ html {
   flex-direction: column;
   align-items: center;
   padding: 0 10px;
+  margin: 0;
   width: 235px;
+}
+
+.inspiration-section {
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  height: 120%;
+  top: 330vh;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.inspiration-heading {
+  height: 20%;
+  width: 80%;
+  padding-top: 35px;
+  margin: 0 120px;
+}
+
+.inspiration-category {
+  display: flex;
+  flex-direction: row;
+  height: 7%;
+  width: 80%;
+  font-family: "Ubuntu", sans-serif;
+  margin: 0 120px;
+}
+
+.inspiration-body {
+  height: 68%;
+  background-color: azure;
 }
 
 /*# sourceMappingURL=style.css.map */

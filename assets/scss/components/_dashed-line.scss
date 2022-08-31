@@ -1,8 +1,8 @@
 .dashed-line::after{
     content: '';
     position: absolute;
-    height: 2px;
-    width: 55px;
+    height: 1px;
+    width: 80px;
     border-top: 2px dashed #000;
     transform: translate(120px, 50px);
 }
