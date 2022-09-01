@@ -17,7 +17,6 @@
 .book-bg a:hover{
     background-color: #C78529;
     border: #C78529;
-    transition: all 500ms ease;
     color: #FFFFFF;
 }
 
@@ -99,4 +98,22 @@
     padding: 25px 0 5px 0;
     font-weight: 400;
     font-size: 15px;
+}
+
+.decor{
+    align-items: center;
+    display: flex;
+}
+
+.decor a{
+    font-family: 'Ubuntu', sans-serif;
+    width: 120px;
+    font-weight: 400;
+    font-size: 17px;
+    padding: 10px 15px;
+    border: 2px solid #000;
+    color: #000;
+    text-decoration: none;
+    margin-right: 10px;
+    text-align: center;
 }

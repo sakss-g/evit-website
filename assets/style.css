@@ -86,6 +86,13 @@ html {
   height: auto;
 }
 
+.protection-img-container img {
+  background-size: cover;
+  position: relative;
+  background-position: center;
+  width: 100%;
+}
+
 .contact-items .fa-phone {
   padding-right: 7px;
 }
@@ -116,7 +123,6 @@ html {
 .book-bg a:hover {
   background-color: #C78529;
   border: #C78529;
-  transition: all 500ms ease;
   color: #FFFFFF;
 }
 
@@ -198,6 +204,24 @@ html {
   padding: 25px 0 5px 0;
   font-weight: 400;
   font-size: 15px;
+}
+
+.decor {
+  align-items: center;
+  display: flex;
+}
+
+.decor a {
+  font-family: "Ubuntu", sans-serif;
+  width: 120px;
+  font-weight: 400;
+  font-size: 17px;
+  padding: 10px 15px;
+  border: 2px solid #000;
+  color: #000;
+  text-decoration: none;
+  margin-right: 10px;
+  text-align: center;
 }
 
 .text-container h1 {
@@ -368,6 +392,25 @@ html {
 .inspiration-link h3 {
   font-size: 16px;
   margin: 7px 0;
+}
+
+.protection-heading p {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 17px;
+  margin: 0;
+}
+
+.protection-body ul {
+  padding-left: 0;
+  padding-right: 30px;
+}
+
+.protection-body li {
+  list-style: none;
+  margin-top: 20px;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  line-height: 1.5;
 }
 
 .main-header {
@@ -782,7 +825,34 @@ html {
   top: 455vh;
   left: 0;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+}
+
+.protection-img-container {
+  width: 51%;
+}
+
+.protection-text-container {
+  width: 49%;
+  display: flex;
+  justify-content: center;
+}
+
+.protection-text {
+  height: 70%;
+  width: 80%;
+  margin-top: 130px;
+}
+
+.protection-body {
+  padding-bottom: 30px;
+}
+
+.protection-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  height: 20%;
 }
 
 /*# sourceMappingURL=style.css.map */

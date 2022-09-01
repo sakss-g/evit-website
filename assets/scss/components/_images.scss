@@ -57,20 +57,17 @@
     height: 111px;
 }
 
-// .inspiration-img-wrapper{
-//         // width: 30%;
-//     height: 30%;
-//     width: 30%;
-// }
-
-// .inspiration-img-wrapper img{
-//     margin: 15px 15px;
-// }
-
 .inspiration-img-wrapper img{
     background-size: cover;
     position: relative;
     background-position: center;
     width: 100%;
     height: auto;
+}
+
+.protection-img-container img{
+    background-size: cover;
+    position: relative;
+    background-position: center;
+    width: 100%;
 }
