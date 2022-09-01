@@ -28,3 +28,27 @@
     text-decoration: none;
     color: #000000;
 }
+
+.image-overlay-text ul{
+    margin: 0;
+    padding: 0;
+}
+
+.image-overlay-text ul li{
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 15px;
+    list-style: none;
+    display: inline;
+}
+
+.image-overlay-text ul li+li:before {
+    padding: 8px;
+    color: black;
+    content: "/\a";
+  }
+
+.inspiration-link h3{
+    font-size: 16px;
+    margin: 7px 0;
+}
