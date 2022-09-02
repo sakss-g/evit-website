@@ -18,3 +18,58 @@
         width:100%;
     }
 }
+
+.contact-container{
+    width: 80%;
+    height: 95%;
+    margin: auto auto;
+    z-index: 10;
+}
+
+.contact-heading{
+    width: 80%;
+    margin: auto auto;
+    text-align: center;
+}
+
+form{
+    background-color: #151515;
+    width: 67%;
+    margin: 0 auto;
+    margin-top: 45px;
+    padding: 25px 0;
+    text-align: center;
+}
+
+.form-wrapper{
+    padding-top: 16px;
+    margin: 0 auto;
+    width: 62%;
+    height: auto;
+}
+
+.info-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.place-container, .text-area{
+    display: flex;
+}
+
+.form-checkbox-button{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+input.checkbox{
+    margin-top: 12px;
+    margin-right: 5px;
+    height: 24px;
+    width: 24px;
+    border: 1px solid #c27100;
+}
+

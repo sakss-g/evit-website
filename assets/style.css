@@ -224,6 +224,19 @@ html {
   text-align: center;
 }
 
+.contact-details {
+  margin-top: 15px;
+}
+
+.contact-details a {
+  padding: 10px 15px;
+  background-color: #C78529;
+  color: #FFFFFF;
+  font-weight: 500;
+  transition: all 0.3s;
+  text-decoration: none;
+}
+
 .text-container h1 {
   padding: 0 35px;
   font-size: 52px;
@@ -411,6 +424,69 @@ html {
   font-family: "Ubuntu", sans-serif;
   font-weight: 300;
   line-height: 1.5;
+}
+
+.contact-heading h1 {
+  font-size: 37px;
+  padding-bottom: 5px;
+}
+
+.contact-heading p {
+  margin: 0;
+  padding-bottom: 10px;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+form p {
+  color: #FFFFFF;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+input, textarea {
+  border: none;
+  font-size: 17px;
+  font-family: "Ubuntu", sans-serif;
+  color: #000000;
+}
+
+.info-container input {
+  padding: 13px;
+  width: 43.5%;
+  border-radius: 3px;
+}
+
+.place-container input {
+  width: 100%;
+  padding: 13px;
+  margin-top: 15px;
+  border-radius: 3px;
+}
+
+.text-area {
+  width: 95%;
+  height: 110px;
+  margin-top: 15px;
+  padding: 13px;
+  border-radius: 3px;
+}
+
+.form-checkbox-button {
+  display: flex;
+  margin-top: 15px;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.checkbox-container {
+  display: flex;
+}
+
+.checkbox-container p {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 16px;
+  margin-left: 5px;
 }
 
 .main-header {
@@ -873,6 +949,60 @@ html {
   left: 0;
   height: 100%;
   width: 100%;
+}
+
+.contact-container {
+  width: 80%;
+  height: 95%;
+  margin: auto auto;
+  z-index: 10;
+}
+
+.contact-heading {
+  width: 80%;
+  margin: auto auto;
+  text-align: center;
+}
+
+form {
+  background-color: #151515;
+  width: 67%;
+  margin: 0 auto;
+  margin-top: 45px;
+  padding: 25px 0;
+  text-align: center;
+}
+
+.form-wrapper {
+  padding-top: 16px;
+  margin: 0 auto;
+  width: 62%;
+  height: auto;
+}
+
+.info-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.place-container, .text-area {
+  display: flex;
+}
+
+.form-checkbox-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+input.checkbox {
+  margin-top: 12px;
+  margin-right: 5px;
+  height: 24px;
+  width: 24px;
+  border: 1px solid #c27100;
 }
 
 /*# sourceMappingURL=style.css.map */
