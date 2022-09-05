@@ -71,3 +71,16 @@
     background-position: center;
     width: 100%;
 }
+
+.footer-logo img{
+    padding-left: 65px;
+}
+
+.footer-desc ul li i{
+    background-image: url('../../assets/images/circle-checkmark-white.png');
+    height: 28px;
+    width: 28px;
+    background-size: cover;
+    position: absolute;
+    transform: translate(-150%,-20%);
+}
