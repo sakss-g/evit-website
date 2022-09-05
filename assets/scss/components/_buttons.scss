@@ -119,15 +119,21 @@
 }
 
 .contact-details{
-    // width: 200px;
-    margin-top: 15px;
+    margin-top: 5px;
 }
 
-.contact-details a{
+.contact-details .disable-btn{
     padding: 10px 15px;
+    font-size: 15px;
     background-color: #C78529;
     color: #FFFFFF;
     font-weight: 500;
     transition: all .3s;
     text-decoration: none;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.disable-btn:hover{
+    cursor: pointer;
+    background-color: #c27100;
 }

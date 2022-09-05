@@ -8,6 +8,10 @@ body {
 }
 
 html {
+  scroll-behavior: smooth;
+}
+
+html {
   font-size: 62.5%;
 }
 
@@ -250,16 +254,23 @@ html {
 }
 
 .contact-details {
-  margin-top: 15px;
+  margin-top: 5px;
 }
 
-.contact-details a {
+.contact-details .disable-btn {
   padding: 10px 15px;
+  font-size: 15px;
   background-color: #C78529;
   color: #FFFFFF;
   font-weight: 500;
   transition: all 0.3s;
   text-decoration: none;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.disable-btn:hover {
+  cursor: pointer;
+  background-color: #c27100;
 }
 
 .text-container h1 {
@@ -600,6 +611,14 @@ input, textarea {
   padding-left: 22px;
 }
 
+input[type=checkbox] {
+  margin-top: 12px;
+  margin-right: 5px;
+  height: 24px;
+  width: 24px;
+  border: 1px solid #c27100;
+}
+
 .main-header {
   position: fixed;
   width: 100%;
@@ -612,11 +631,8 @@ input, textarea {
   background-color: rgba(0, 0, 0, 0.37);
 }
 
-.contact-header .hide {
-  opacity: 0;
-  z-index: -1;
-  visibility: hidden;
-  transition: all 0.3s;
+.contact-header.hide {
+  display: none;
 }
 
 .contact-items {
@@ -664,6 +680,15 @@ input, textarea {
     margin: 0 0;
     padding: 0 5px;
   }
+}
+
+.main-header.scroll {
+  background-color: #000;
+  padding-bottom: 8px;
+  padding-top: 0;
+}
+.main-header.scroll .menu-header {
+  padding-top: 5px;
 }
 
 .logo-container {
@@ -1109,14 +1134,6 @@ form {
   flex-direction: row;
   justify-content: space-between;
   margin-bottom: 15px;
-}
-
-input.checkbox {
-  margin-top: 12px;
-  margin-right: 5px;
-  height: 24px;
-  width: 24px;
-  border: 1px solid #c27100;
 }
 
 .footer-section {
