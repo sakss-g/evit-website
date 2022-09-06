@@ -16,8 +16,9 @@
 
 .book-bg a:hover{
     background-color: #C78529;
-    border: #C78529;
+    border: 2px solid #C78529;
     color: #FFFFFF;
+    transition: all .3s;
 }
 
 .book-home-visit{

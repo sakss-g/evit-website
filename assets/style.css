@@ -111,6 +111,10 @@ html {
   transform: translate(-150%, -20%);
 }
 
+.review-logo-container img {
+  height: 40px;
+}
+
 .contact-items .fa-phone {
   padding-right: 7px;
 }
@@ -152,8 +156,9 @@ html {
 
 .book-bg a:hover {
   background-color: #C78529;
-  border: #C78529;
+  border: 2px solid #C78529;
   color: #FFFFFF;
+  transition: all 0.3s;
 }
 
 .book-home-visit {
@@ -638,6 +643,7 @@ input[type=checkbox] {
   margin-right: 15px;
   font-size: 12px;
   transition: all 0.3Ss;
+  bottom: 30px;
 }
 
 .remove {
@@ -948,18 +954,31 @@ input[type=checkbox] {
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  background-color: darkseagreen;
 }
 
 .review-container {
   width: 83%;
-  height: 50%;
-  margin-top: 55px;
+  height: 220px;
+  margin-top: 20px;
   margin-bottom: 45px;
   margin-left: 125px;
   display: flex;
   flex-direction: column;
   border: solid 3px #CCCCCC;
+}
+
+.reviews {
+  height: 80%;
+  width: 100%;
+  background-color: darkseagreen;
+}
+
+.review-rating-logo {
+  height: 20%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .idea-solution-section {
@@ -979,12 +998,7 @@ input[type=checkbox] {
 .idea-solution-heading {
   height: 20%;
   text-align: center;
-  z-index: 1;
   padding: 20px;
-}
-
-.idea-solution-body {
-  z-index: 1;
 }
 
 .idea-wrapper {
@@ -1016,34 +1030,28 @@ input[type=checkbox] {
   margin: 0 120px;
 }
 
-.inspiration-category {
-  display: flex;
-  flex-direction: row;
-  height: 7%;
-  width: 80%;
-  font-family: "Ubuntu", sans-serif;
-  margin: 0 120px;
-}
-
 .inspiration-body {
-  height: 73%;
+  height: auto !important;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   padding: 15px 15px;
 }
 
 .inspiration-img-wrapper {
   display: flex;
-  position: relative;
-  width: 33%;
-  height: 48.5%;
+  position: relative !important;
+  width: 32.5% !important;
+  height: 48.5% !important;
+  left: 0 !important;
+  top: 0 !important;
+  margin: 5px 5px !important;
 }
 .inspiration-img-wrapper:hover .image-overlay-text {
   opacity: 1;
   z-index: 99;
   visibility: visible;
   cursor: pointer;
+  transition: all 3s;
 }
 .inspiration-img-wrapper .image-overlay-text {
   display: flex;
@@ -1081,6 +1089,42 @@ input[type=checkbox] {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+
+.inspiration-category {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  margin: 0 120px;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.inspiration-category a {
+  display: inline-block;
+  position: relative;
+  padding: 9px 5px;
+  text-decoration: none;
+}
+
+.inspiration-category a:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 4px;
+  width: 0;
+  height: 2px;
+  background-color: #000000;
+  transition: 0.3s;
+}
+
+.inspiration-category a:hover::after {
+  width: 100%;
+}
+
+.inspiration-category .active::after {
+  width: 100%;
 }
 
 .protection-section {

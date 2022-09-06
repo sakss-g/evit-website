@@ -1,10 +1,5 @@
 .inspiration-section{
     overflow: hidden;
-    // position: absolute;
-    // width: 100%;
-    // height: 125vh;
-    // top: 330vh;
-    // left: 0;
     display: flex;
     flex-direction: column;
 }
@@ -16,28 +11,22 @@
     margin: 0 120px;
 }
 
-.inspiration-category{
-    display: flex;
-    flex-direction: row;
-    height: 7%;
-    width: 80%;
-    font-family: 'Ubuntu', sans-serif;
-    margin: 0 120px;
-}
-
 .inspiration-body{
-    height: 73%;
+    height: auto !important;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     padding: 15px 15px;
 }
 
 .inspiration-img-wrapper{
     display: flex;
-    position: relative;
-    width:33%;
-    height: 48.5%;
+    position: relative !important;
+    width:32.5% !important;
+    height: 48.5% !important;
+    left: 0 !important;
+    top: 0 !important;
+    margin: 5px 5px !important;
+
 
     &:hover {
         .image-overlay-text{
@@ -45,6 +34,7 @@
             z-index: 99;
             visibility: visible;
             cursor: pointer;
+            transition: all 3s;
         }
     }
 
@@ -85,4 +75,41 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+
+.inspiration-category{
+    display:flex;
+    list-style: none;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    margin: 0 120px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.inspiration-category a{
+    display: inline-block;
+    position: relative;
+    padding: 9px 5px;
+    text-decoration: none;
+}
+
+.inspiration-category a:after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 4px;
+    width: 0;
+    height: 2px;
+    background-color: #000000;
+    transition: 0.3s;
+}
+
+.inspiration-category a:hover::after{
+    width: 100%;
+}
+
+.inspiration-category .active::after{
+    width: 100%;
+
 }

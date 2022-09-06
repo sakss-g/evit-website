@@ -57,34 +57,17 @@ jQuery( document ).ready( function(){
     });
 
     // init Isotope
-    // jQuery('.inspiration-body').isotope({
-    //     itemSelector: '.inspiration-img-wrapper',
-    //     layoutMode: 'fitRows'
-    // });
-    // // filter items on button click
-    // jQuery('.inspiration-category ul li a').on( 'click', 'button', function() {
-    //     // var filterValue = jQuery(this).attr('data-filter');
-    //     // $grid.isotope({ filter: filterValue });
-    //     $('.inspiration-category ul li a').removeClass('active');
-    //     $(this).addClass('active');
+    var $grid = $('.inspiration-body').isotope({});
+    
+    // filter items on button click
+    jQuery('.inspiration-category ul').on( 'click', 'a', function(e) {
+        e.preventDefault();
 
-    //     var selector = $(this).attr('data-filter');
-    //     $('.inspiration-body').isotope({
-    //         filter: selector
-    //     });
-    //     return false;
+        jQuery('.inspiration-category ul li a').removeClass('active');
+        jQuery(this).addClass('active');
 
-    // });
-
-    // init Isotope
-    // var $grid = $('.inspiration-body').isotope({
-    //     // options
-    // });
-    // // filter items on button click
-    // $('.inspiration-category ul').on( 'click', 'a', function(e) {
-    //     e.preventDefault();
-    //     var filterValue = $(this).attr('data-filter');
-    //     $grid.isotope({ filter: filterValue });
-    // });
+        var filterValue = $(this).attr('data-filter');
+        $grid.isotope({ filter: filterValue });
+    });
 
 });
