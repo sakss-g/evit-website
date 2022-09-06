@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="../assets/style.css">
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>    
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
     <script src="../assets/js/index.js"></script>
 
 </head>
@@ -90,7 +91,7 @@
                         </div>
 
                         <div class="book-home-visit-banner book-bg">
-                            <a href="">Boka hembesök</a>
+                            <a href="#contact-form">Boka hembesök</a>
                         </div>
                     </div>
                 </div>
@@ -100,6 +101,13 @@
     </div>
 
     <div class="video-section">
+        <div id="light">
+            <a class="boxclose" id="boxclose"></a>
+            <iframe id="vid" src="https://www.youtube.com/embed/CHBvmi_APio" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+        <div id="fade"></div>
+
         <div class="video-container">
             <div class="video-video-container">
                 <div class="image">
@@ -145,7 +153,9 @@
         </div>
 
         <div class="review-container">
-
+            <h1>jdfhaufhiauhfiu</h1>
+            <h1>jdfhaufhiauhfiu</h1>
+            <h1>jdfhaufhiauhfiu</h1>
         </div>
     </div>
 
@@ -215,16 +225,16 @@
 
         <div class="inspiration-category">
             <ul>
-                <li><a href="">Persienner</a></li>
-                <li><a href="">Lamellgardiner</a></li>
-                <li><a href="">Insektsnät</a></li>
-                <li><a href="">Rullgardiner</a></li>
-                <li><a href="">Markiser</a></li>
+                <li><a href="#" data-filter="*">Persienner</a></li>
+                <li><a href="#" data-filter=".lamellgardiner">Lamellgardiner</a></li>
+                <li><a href="#" data-filter=".insektsnät">Insektsnät</a></li>
+                <li><a href="#" data-filter=".rullgardiner">Rullgardiner</a></li>
+                <li><a href="#" data-filter=".markiser">Markiser</a></li>
             </ul>
 
         </div>
         <div class="inspiration-body">
-            <div class="inspiration-img-wrapper">
+            <div class="inspiration-img-wrapper lamellgardiner markiser">
                 <img src="../assets/images/inspiration-1.png" alt="">
                 <div class="image-overlay-text">
                     <ul>
@@ -238,7 +248,7 @@
                 </div>
             </div>
             
-            <div class="inspiration-img-wrapper">
+            <div class="inspiration-img-wrapper insektsnät rullgardiner">
                 <img src="../assets/images/inspiration-2.png" alt="">
                 <div class="image-overlay-text">
                     <ul>
@@ -253,7 +263,7 @@
                 </div>
             </div>
 
-            <div class="inspiration-img-wrapper">
+            <div class="inspiration-img-wrapper insektsnät">
                 <img src="../assets/images/inspiration-3.png" alt="">
                 <div class="image-overlay-text">
                     <ul>
@@ -267,7 +277,7 @@
                 </div>
             </div>
 
-            <div class="inspiration-img-wrapper">
+            <div class="inspiration-img-wrapper lamellgardiner insektsnät rullgardiner markiser">
                 <img src="../assets/images/inspiration-1.png" alt="">
                 <div class="image-overlay-text">
                     <ul>
@@ -283,7 +293,7 @@
                 </div>
             </div>
 
-            <div class="inspiration-img-wrapper">
+            <div class="inspiration-img-wrapper insektsnät markiser">
                 <img src="../assets/images/inspiration-2.png" alt="">
                 <div class="image-overlay-text">
                     <ul>
@@ -298,7 +308,7 @@
                 </div>
             </div>
 
-            <div class="inspiration-img-wrapper">
+            <div class="inspiration-img-wrapper insektsnät">
                 <img src="../assets/images/inspiration-3.png" alt="">
                 <div class="image-overlay-text">
                     <ul>
@@ -359,7 +369,6 @@
     </div>
     
     <div class="contact-section" id="contact-form">
-        <!-- <a name="contact-form"></a> -->
         <div class="contact-container">
             <div class="contact-heading">
                 <h1>Jag önskar ett kostnadsfritt hembesök</h1>
@@ -398,55 +407,61 @@
         </div>
     </div>
 
-    <div class="footer-section">
-        <div class="footer-container">
-            <div class="footer-logo">
-                <img src="../assets/images/logo.png" alt="">
+    <footer>
+        <div class="footer-section">
+            <div class="footer-container">
+                <div class="footer-logo">
+                    <img src="../assets/images/logo.png" alt="">
+                </div>
+
+                <div class="footer-desc">
+                    <h3>Solskydda.se</h3>
+                    <ul>
+                        <li><i></i><span>Solskydd av högsta kvalitet</span></li>
+                        <li><i></i><span>Stilren och mer modern design</span></li>
+                        <li><i></i><span>Våra lösningar ökar er livskvalitet och värdet på ert hem</span></li>
+                        <li><i></i><span>Kostnadsfria hembesök</span></li>
+                    </ul>
+                </div>
+
+                <div class="footer-info">
+                    <h3>Information</h3>
+                    <ul>
+                        <li><a href="">Inomhus solskydd</a></li>
+                        <li><a href="">Inspiration</a></li>
+                        <li><a href="">Kontakta oss / Boka visning</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h3>Kontakta oss</h3>
+                    <ul>
+                        <li>
+                            <i class="fa-solid fa-location-dot"></i><span>Solskydda / My home AB</span>
+                        </li>
+                        <li>
+                            <span class="address">Box 16102, 111 29 Stockholm</span>
+                        </li>
+                        <li>
+                            <a href="tel:%20+08%20-%20800%20800"><i class="fa-solid fa-phone"></i>
+                            <span>+08 - 800 800</span></a>
+                        </li>
+                        <li>
+                            <a href="mailto:%20info@solskydda.se"><i class="fa-solid fa-envelope"></i>
+                            <span>info@solskydda.se</span></a>
+                        </li>
+                    </ul>
+                </div>
             </div>
 
-            <div class="footer-desc">
-                <h3>Solskydda.se</h3>
-                <ul>
-                    <li><i></i><span>Solskydd av högsta kvalitet</span></li>
-                    <li><i></i><span>Stilren och mer modern design</span></li>
-                    <li><i></i><span>Våra lösningar ökar er livskvalitet och värdet på ert hem</span></li>
-                    <li><i></i><span>Kostnadsfria hembesök</span></li>
-                </ul>
-            </div>
-
-            <div class="footer-info">
-                <h3>Information</h3>
-                <ul>
-                    <li><a href="">Inomhus solskydd</a></li>
-                    <li><a href="">Inspiration</a></li>
-                    <li><a href="">Kontakta oss / Boka visning</a></li>
-                </ul>
-            </div>
-            
-            <div class="footer-contact">
-                <h3>Kontakta oss</h3>
-                <ul>
-                    <li>
-                        <i class="fa-solid fa-location-dot"></i><span>Solskydda / My home AB</span>
-                    </li>
-                    <li>
-                        <span class="address">Box 16102, 111 29 Stockholm</span>
-                    </li>
-                    <li>
-                        <a href="tel:%20+08%20-%20800%20800"><i class="fa-solid fa-phone"></i>
-                        <span>+08 - 800 800</span></a>
-                    </li>
-                    <li>
-                        <a href="mailto:%20info@solskydda.se"><i class="fa-solid fa-envelope"></i>
-                        <span>info@solskydda.se</span></a>
-                    </li>
-                </ul>
+            <div class="copyright">
+                <p>Copyright © All right reserved</p>
             </div>
         </div>
+    </footer>
 
-        <div class="copyright">
-
-        </div>
-    </div>
+    <a href="#" class="scroll-to-top remove">
+        <i class="fa-solid fa-angle-up"></i>
+    </a>
 </body>
 </html>

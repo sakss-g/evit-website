@@ -27,22 +27,64 @@ jQuery( document ).ready( function(){
         }
     });
 
-    // jQuery( '.scrollTo' ).click(function(){
-    //     var getElement = $(this).attr('href');
+    // scroll to top
+    jQuery( window ).on("scroll", function(){
+        if(jQuery(window).scrollTop() > 0){
+            jQuery( '.scroll-to-top' ).removeClass( 'remove' );
+        }else{
+            jQuery( '.scroll-to-top' ).addClass( 'remove' );
+        }
+    });
+
+    jQuery( document ).on( 'click', '.video-button-container', function(){
+        jQuery( '.main-header' ).addClass( 'only-video' );
+        jQuery( '.scroll-to-top' ).addClass( 'only-video' );
+
+        var lightBoxVideo = document.getElementById("vid");
+        document.getElementById('light').style.display = 'block';
+        document.getElementById('fade').style.display = 'block';
+        lightBoxVideo.play();
+    });
+
+    jQuery( document ).on( 'click', '.boxclose', function(){
+        jQuery( '.main-header' ).removeClass( 'only-video' );
+        jQuery( '.scroll-to-top' ).removeClass( 'only-video' );
+
+        var lightBoxVideo = document.getElementById("vid");
+        document.getElementById('light').style.display = 'none';
+        document.getElementById('fade').style.display = 'none';
+        lightBoxVideo.pause();
+    });
+
+    // init Isotope
+    // jQuery('.inspiration-body').isotope({
+    //     itemSelector: '.inspiration-img-wrapper',
+    //     layoutMode: 'fitRows'
+    // });
+    // // filter items on button click
+    // jQuery('.inspiration-category ul li a').on( 'click', 'button', function() {
+    //     // var filterValue = jQuery(this).attr('data-filter');
+    //     // $grid.isotope({ filter: filterValue });
+    //     $('.inspiration-category ul li a').removeClass('active');
+    //     $(this).addClass('active');
+
+    //     var selector = $(this).attr('data-filter');
+    //     $('.inspiration-body').isotope({
+    //         filter: selector
+    //     });
+    //     return false;
 
     // });
 
-    // jQuery(document).ready(function($) {
-    //     $('a[href^="#"]').bind('click.smoothscroll',function (e) {
-    //       e.preventDefault();
-    //       var target = this.hash,
-    //           $target = $(target);
-      
-    //       $('html, body').stop().animate( {
-    //         'scrollTop': $target.offset().top-40
-    //       }, 900, 'swing', function () {
-    //         window.location.hash = target;
-    //       } );
-    //     } );
-    //   } );
+    // init Isotope
+    // var $grid = $('.inspiration-body').isotope({
+    //     // options
+    // });
+    // // filter items on button click
+    // $('.inspiration-category ul').on( 'click', 'a', function(e) {
+    //     e.preventDefault();
+    //     var filterValue = $(this).attr('data-filter');
+    //     $grid.isotope({ filter: filterValue });
+    // });
+
 });

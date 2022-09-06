@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   margin: 0;
   padding: 0;
@@ -619,6 +620,33 @@ input[type=checkbox] {
   border: 1px solid #c27100;
 }
 
+.copyright {
+  background-color: #000;
+  text-align: center;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+}
+
+.scroll-to-top {
+  padding: 13.5px 17px;
+  color: #ffffff;
+  right: 0;
+  position: fixed;
+  background-color: #C78529;
+  z-index: 10;
+  border-radius: 3px;
+  margin-right: 15px;
+  font-size: 12px;
+  transition: all 0.3Ss;
+}
+
+.remove {
+  opacity: 0;
+  z-index: -1;
+  transition: all 0.3s;
+  visibility: hidden;
+}
+
 .main-header {
   position: fixed;
   width: 100%;
@@ -818,22 +846,9 @@ input[type=checkbox] {
 
 .video-section {
   overflow: hidden;
-  position: absolute;
-  width: 100%;
-  height: 90vh;
-  top: 90vh;
-  left: 0;
-  z-index: 1;
   display: flex;
-}
-.video-section::after {
-  content: "";
   background-color: rgba(248, 248, 248, 0.7);
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
+  padding-bottom: 80px;
 }
 
 .video-container {
@@ -842,7 +857,6 @@ input[type=checkbox] {
   margin-top: 30px;
   margin-left: 80px;
   display: flex;
-  z-index: 1;
 }
 
 .video-video-container {
@@ -853,15 +867,13 @@ input[type=checkbox] {
 .video-text-container {
   height: 100%;
   width: 50%;
+  position: relative;
 }
 
 .image .video-bg-overlay {
   width: 100%;
   height: 100%;
   background-color: rgba(16, 8, 8, 0.44);
-}
-
-.video-bg-overlay:hover {
   cursor: pointer;
 }
 
@@ -869,15 +881,71 @@ input[type=checkbox] {
   padding: 150px 243px 150px 250px;
   height: 100px;
   width: 100px;
+  transition: all 0.5s;
+}
+
+#light {
+  display: none;
+  position: fixed;
+  top: 10%;
+  left: 12%;
+  width: 75%;
+  height: 100%;
+  z-index: 1002;
+  overflow: visible;
+}
+
+#vid {
+  width: 100%;
+  height: 80vh;
+}
+
+#fade {
+  display: none;
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  z-index: 1001;
+  -moz-opacity: 0.8;
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+}
+
+#boxclose {
+  cursor: pointer;
+  color: #fff;
+  border: 1px solid #AEAEAE;
+  border-radius: 3px;
+  background: #222222;
+  font-size: 31px;
+  font-weight: bold;
+  display: inline-block;
+  line-height: 0px;
+  padding: 11px 3px;
+  position: absolute;
+  right: 2px;
+  top: 2px;
+  z-index: 1002;
+  opacity: 0.9;
+}
+
+.boxclose:before {
+  content: "×";
+}
+
+#fade:hover ~ #boxclose {
+  display: none;
+}
+
+.only-video {
+  display: none;
 }
 
 .review-section {
   overflow: hidden;
-  position: absolute;
-  width: 100%;
-  height: 60vh;
-  top: 180vh;
-  left: 0;
   display: flex;
   flex-direction: column;
   background-color: darkseagreen;
@@ -890,27 +958,15 @@ input[type=checkbox] {
   margin-bottom: 45px;
   margin-left: 125px;
   display: flex;
+  flex-direction: column;
   border: solid 3px #CCCCCC;
 }
 
 .idea-solution-section {
   overflow: hidden;
-  position: absolute;
-  width: 100%;
-  height: 90vh;
-  top: 240vh;
-  left: 0;
-  z-index: 1;
-  display: flex;
-}
-.idea-solution-section::after {
-  content: "";
   background-color: rgba(248, 248, 248, 0.7);
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
+  display: flex;
+  padding: 30px 0 50px 0;
 }
 
 .idea-solution-container {
@@ -949,11 +1005,6 @@ input[type=checkbox] {
 
 .inspiration-section {
   overflow: hidden;
-  position: absolute;
-  width: 100%;
-  height: 125vh;
-  top: 330vh;
-  left: 0;
   display: flex;
   flex-direction: column;
 }
@@ -1034,11 +1085,6 @@ input[type=checkbox] {
 
 .protection-section {
   overflow: hidden;
-  position: absolute;
-  width: 100%;
-  height: 100vh;
-  top: 455vh;
-  left: 0;
   display: flex;
   flex-direction: row;
 }
@@ -1072,22 +1118,8 @@ input[type=checkbox] {
 
 .contact-section {
   overflow: hidden;
-  position: absolute;
-  width: 100%;
-  height: 100vh;
-  top: 555vh;
-  left: 0;
-  z-index: 1;
-  display: flex;
-}
-.contact-section::after {
-  content: "";
   background-color: rgba(248, 248, 248, 0.7);
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
+  padding: 50px 0 70px 0;
 }
 
 .contact-container {
@@ -1138,11 +1170,6 @@ form {
 
 .footer-section {
   overflow: hidden;
-  position: absolute;
-  width: 100%;
-  height: 47vh;
-  top: 655vh;
-  left: 0;
   display: flex;
   flex-direction: column;
   background-color: #151515;
@@ -1150,10 +1177,11 @@ form {
 }
 
 .footer-container {
+  padding-top: 65px;
   display: flex;
   flex-direction: row;
   width: 90%;
-  height: 72%;
+  height: 55%;
   margin: auto auto;
   font-weight: 300;
 }
