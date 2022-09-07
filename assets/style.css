@@ -115,6 +115,11 @@ html {
   height: 40px;
 }
 
+.review img {
+  height: 50%;
+  padding: 8px 5px 8px 0;
+}
+
 .contact-items .fa-phone {
   padding-right: 7px;
 }
@@ -139,6 +144,14 @@ html {
 
 .footer-contact .fa-location-dot {
   padding-right: 9px;
+}
+
+.rating-container .fa-angle-right {
+  cursor: pointer;
+  color: gray;
+  padding-top: 12px;
+  padding-left: 10px;
+  font-size: 13px;
 }
 
 .book a {
@@ -354,6 +367,30 @@ html {
 .review-heading h1 {
   padding-top: 30px;
   font-size: 36px;
+}
+
+.rating-container h1 {
+  margin: 0;
+  padding-left: 10px;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.rating-container h2 {
+  margin-top: 0;
+  font-size: 2rem;
+  font-weight: 300;
+  padding-left: 5px;
+  color: gray;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.rating-container p {
+  font-size: 13px;
+  font-weight: 200;
+  color: gray;
+  margin-top: 10px;
+  margin-left: 10px;
+  font-family: "Ubuntu", sans-serif;
 }
 
 .idea-solution-heading p {
@@ -959,9 +996,7 @@ input[type=checkbox] {
 .review-container {
   width: 83%;
   height: 220px;
-  margin-top: 20px;
-  margin-bottom: 45px;
-  margin-left: 125px;
+  margin: 20px auto 45px;
   display: flex;
   flex-direction: column;
   border: solid 3px #CCCCCC;
@@ -970,7 +1005,7 @@ input[type=checkbox] {
 .reviews {
   height: 80%;
   width: 100%;
-  background-color: darkseagreen;
+  position: relative;
 }
 
 .review-rating-logo {
@@ -979,6 +1014,27 @@ input[type=checkbox] {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+
+.rating-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.rating-container p {
+  cursor: pointer;
+}
+
+.review-wrapper {
+  height: 100%;
+  width: 95%;
+  margin: auto auto;
+  display: flex;
+  flex-direction: row;
+}
+
+.review {
+  height: 327px;
 }
 
 .idea-solution-section {
@@ -1248,6 +1304,14 @@ form {
 .footer-contact {
   height: 100%;
   width: 26%;
+}
+
+.slick-prev:before, .slick-next:before {
+  color: gray;
+}
+
+.slick-list.draggable {
+  margin-right: 15px;
 }
 
 /*# sourceMappingURL=style.css.map */

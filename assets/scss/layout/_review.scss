@@ -7,18 +7,17 @@
 .review-container{
     width: 83%;
     height: 220px;
-    margin-top: 20px;
-    margin-bottom: 45px;
-    margin-left: 125px;
+    margin: 20px auto 45px;
     display: flex;
     flex-direction: column;
     border: solid 3px #CCCCCC;
+
 }
 
 .reviews{
     height: 80%;
     width: 100%;
-    background-color: darkseagreen;
+    position: relative;
 }
 
 .review-rating-logo{
@@ -28,3 +27,25 @@
     flex-direction: row;
     justify-content: space-between;
 }
+
+.rating-container{
+    display: flex;
+    flex-direction: row;
+}
+
+.rating-container p{
+    cursor: pointer;
+}
+
+.review-wrapper{
+    height: 100%;
+    width: 95%;
+    margin: auto auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.review{
+    height: 327px;
+}
+
