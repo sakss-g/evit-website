@@ -6,10 +6,15 @@
     left: -10px;
     object-fit: cover;
 
-    // @include for-mobile{
-    //     background-size: cover;
-    //     height: 100vh;
-    // }
+    @include for-mobile{
+        background-size: cover;
+        // height: 100vh;
+        // background-position: center center;
+        // display: flex;
+        // flex-wrap: wrap;
+        // background-position: 50% center;
+        // max-width: 920px;
+    }
 
     // @include for-small-screen{
     //     background-size: cover;

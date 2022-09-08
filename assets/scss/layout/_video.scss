@@ -1,3 +1,5 @@
+@import '../responsive';
+
 .video-section{
     overflow: hidden;
     display: flex;
@@ -11,17 +13,31 @@
     margin-top: 30px;
     margin-left: 80px;
     display: flex;
+
+    @include for-mobile{
+        width: 100%;
+        margin-left: 0;
+        display: flex;
+        flex-direction: column-reverse;
+    }
 }
 
 .video-video-container{
     height: 100%;
     width: 50%;
+
+    @include for-mobile{
+        width: 100%;
+    }
 }
 
 .video-text-container{
     height: 100%;
     width:50%;
-    position: relative;
+
+    @include for-mobile{
+        width: 100%;
+    }
 }
 
 .image .video-bg-overlay{

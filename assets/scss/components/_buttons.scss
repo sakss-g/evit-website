@@ -21,9 +21,11 @@
     transition: all .3s;
 }
 
-.book-home-visit{
+.btns{
     align-items: center;
-    display: flex;   
+    display: flex;
+    margin-right: 0;
+    width: auto;
 }
 
 .banner-buttons{
@@ -33,27 +35,17 @@
     height: 55px;
     margin-top: 25px;
     margin-left: 40px;
-}
 
-.see-our-products{
-    align-items: center;
-    display: flex;
-    margin-right: 0;
-    width: auto;
-}
-
-.book-home-visit-banner{
-    align-items: center;
-    display: flex;
-    margin-right: 0;
-    width: auto;
+    @include for-mobile{
+        width: 60%;
+        margin: 25px auto;
+    }
 }
 
 .book-home-visit-banner a{
     font-family: 'Ubuntu', sans-serif;
     font-weight: 400;
-    font-size: 17px;
-    padding: 12px 20px;
+    padding: 15px 20px;
     border: 2px solid #FFFFFF;
     color: #FFFFFF;
     text-decoration: none;
@@ -68,24 +60,9 @@
     margin-left: 40px;
 }
 
-.read-more-about-us{
-    align-items: center;
-    display: flex;
-    margin-right: 0;
-    width: auto;
-}
-
-.book-home-visit-video{
-    align-items: center;
-    display: flex;
-    margin-right: 0;
-    width: auto;
-}
-
 .book-home-visit-video a{
     font-family: 'Ubuntu', sans-serif;
     font-weight: 400;
-    font-size: 17px;
     padding: 13px 15px;
     border: 2px solid #000;
     color: #000;
@@ -98,19 +75,12 @@
     justify-content: center;
     padding: 25px 0 5px 0;
     font-weight: 400;
-    font-size: 15px;
-}
-
-.decor{
-    align-items: center;
-    display: flex;
 }
 
 .decor a{
     font-family: 'Ubuntu', sans-serif;
     width: 120px;
     font-weight: 400;
-    font-size: 17px;
     padding: 10px 15px;
     border: 2px solid #000;
     color: #000;
@@ -125,7 +95,6 @@
 
 .contact-details .disable-btn{
     padding: 10px 15px;
-    font-size: 15px;
     background-color: #C78529;
     color: #FFFFFF;
     font-weight: 500;
