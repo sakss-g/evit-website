@@ -37,15 +37,35 @@
     margin-left: 40px;
 
     @include for-mobile{
-        width: 60%;
+        width: 75% !important;
         margin: 25px auto;
+        font-size: 1.3rem;
     }
+
+    @include for-desktop{
+        width: 65%;
+    }
+
+    @include for-desktop-up{
+        width: 50%;
+    }
+
+    @include for-desktop-small{
+        width: 50%;
+    }
+    
+    @include for-phone-only{
+        width: 100% !important;
+        margin-left: 0;
+    }
+
+    
 }
 
 .book-home-visit-banner a{
     font-family: 'Ubuntu', sans-serif;
     font-weight: 400;
-    padding: 15px 20px;
+    padding: 13.7px 20px;
     border: 2px solid #FFFFFF;
     color: #FFFFFF;
     text-decoration: none;
@@ -58,6 +78,8 @@
     height: 55px;
     margin-top: 15px;
     margin-left: 40px;
+
+    @include for-mobile{}
 }
 
 .book-home-visit-video a{

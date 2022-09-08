@@ -28,6 +28,7 @@
 
     @include for-mobile{
         width: 100%;
+        margin-top: 25px;
     }
 }
 
@@ -52,6 +53,11 @@
     height: 100px;
     width: 100px;
     transition: all 0.5s;
+
+    @include for-mobile{
+        padding: 150px;
+        margin: auto auto;
+    }
 }
 
 #light{
@@ -63,6 +69,11 @@
     height: 100%;
     z-index: 1002;
     overflow: visible;
+
+    @include for-mobile{
+        left: 0;
+        width: 100%;
+    }
 }
 
 #vid{

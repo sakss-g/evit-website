@@ -24,12 +24,12 @@
     font-family: 'Ubuntu', sans-serif;
     padding-left: 45px; 
     padding-right: 30px;
-    font-size: 17px;
+    font-size: 1rem;
     font-weight: lighter;
 
-    // @include for-mobile{
-    //     color: pink;
-    // }
+    @include for-mobile{
+        font-size: 1.8rem;
+    }
 }
 .video-description li{
     list-style: none;
@@ -42,6 +42,10 @@
     padding-bottom: 10px;;
     font-family: 'Ubuntu', sans-serif;
     font-weight: 300;
-    font-size: 17px;
+    font-size: 1rem;
+
+    @include for-mobile{
+        font-size: 1.8rem;
+    }
 }
 

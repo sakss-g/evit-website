@@ -6,8 +6,11 @@
     margin-bottom: 10px;
 
     @include for-mobile{
-        // font-size: 32px;
         text-align: center;
+    }
+
+    @include for-phone-only{
+        padding: 0 10px;;
     }
 }
 
@@ -15,6 +18,10 @@
     margin: 0;
     list-style: none;
     padding-top: 15px;
+
+    @include for-phone-only{
+        padding-left: 0;
+    }
 }
 
 .description li{
@@ -26,4 +33,8 @@
     font-family: 'Ubuntu', sans-serif;
     font-weight: 300;
     font-size: 1.2rem;
+
+    @include for-mobile{
+        font-size: 1.4rem;
+    }
 }
