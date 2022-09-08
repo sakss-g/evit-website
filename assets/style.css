@@ -197,7 +197,7 @@ html {
 }
 @media (max-width: 767px) {
   .banner-buttons {
-    width: 75% !important;
+    width: 70% !important;
     margin: 25px auto;
     font-size: 1.3rem;
   }
@@ -219,8 +219,7 @@ html {
 }
 @media (max-width: 480px) {
   .banner-buttons {
-    width: 100% !important;
-    margin-left: 0;
+    width: 90% !important;
   }
 }
 
@@ -236,11 +235,39 @@ html {
 .video-text-buttons {
   display: flex;
   justify-content: space-between;
-  width: 48%;
+  width: 51%;
   height: 55px;
   margin-top: 15px;
   margin-left: 40px;
 }
+@media (max-width: 767px) {
+  .video-text-buttons {
+    width: 50%;
+    margin: 25px 0 25px 25px;
+    font-size: 1.3rem;
+  }
+}
+@media (max-width: 480px) {
+  .video-text-buttons {
+    width: 65%;
+  }
+}
+@media (max-width: 533px) {
+  .video-text-buttons {
+    width: 68%;
+  }
+}
+@media (max-width: 1400px) {
+  .video-text-buttons {
+    width: 55.5%;
+  }
+}
+@media (max-width: 1024px) {
+  .video-text-buttons {
+    width: 63%;
+  }
+}
+
 .book-home-visit-video a {
   font-family: "Ubuntu", sans-serif;
   font-weight: 400;
@@ -343,6 +370,11 @@ html {
   color: #151515;
   margin-bottom: 0;
 }
+@media (max-width: 1024px) {
+  .video-heading h1 {
+    padding-left: 20px;
+  }
+}
 
 .video-heading-description {
   display: flex;
@@ -361,7 +393,18 @@ html {
 }
 @media (max-width: 767px) {
   .video-heading-description p {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
+  }
+}
+@media (max-width: 1024px) {
+  .video-heading-description p {
+    padding-left: 20px;
+  }
+}
+
+@media (max-width: 1024px) {
+  ul.video-description {
+    padding-left: 0;
   }
 }
 
@@ -380,7 +423,7 @@ html {
 }
 @media (max-width: 767px) {
   .video-description li span {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
   }
 }
 
@@ -977,6 +1020,12 @@ input[type=checkbox] {
     flex-direction: column-reverse;
   }
 }
+@media (max-width: 1200px) {
+  .video-container {
+    width: 100%;
+    margin-left: 0;
+  }
+}
 
 .video-video-container {
   height: 100%;
@@ -1016,6 +1065,36 @@ input[type=checkbox] {
   .video-button-container {
     padding: 150px;
     margin: auto auto;
+  }
+}
+@media (max-width: 533px) {
+  .video-button-container {
+    padding: 125px;
+  }
+}
+@media (max-width: 480px) {
+  .video-button-container {
+    padding: 85px !important;
+  }
+}
+@media (max-width: 900px) {
+  .video-button-container {
+    padding: 80px 103px !important;
+  }
+}
+@media (max-width: 1200px) {
+  .video-button-container {
+    padding: 120px 190px;
+  }
+}
+@media (max-width: 1400px) {
+  .video-button-container {
+    padding: 150px 205px;
+  }
+}
+@media (max-width: 1024px) {
+  .video-button-container {
+    padding: 90px 157px;
   }
 }
 

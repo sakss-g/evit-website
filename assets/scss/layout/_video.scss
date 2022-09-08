@@ -21,6 +21,11 @@
         display: flex;
         flex-direction: column-reverse;
     }
+
+    @include for-desktop-up{
+        width: 100%;
+        margin-left: 0;
+    }
 }
 
 .video-video-container{
@@ -58,6 +63,30 @@
     @include for-mobile{
         padding: 150px;
         margin: auto auto;
+    }
+
+    @include extra{
+        padding: 125px;
+    }
+
+    @include for-phone-only{
+        padding: 85px !important;
+    }
+
+    @include for-tablet-landscape-up{
+        padding: 80px 103px !important;
+    }
+
+    @include for-desktop-up{
+        padding: 120px 190px ;
+    }
+
+    @include for-desktop{
+        padding: 150px 205px;
+    }
+
+    @include for-desktop-small{
+        padding: 90px 157px;
     }
 }
 
