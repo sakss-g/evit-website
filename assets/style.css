@@ -404,7 +404,7 @@ html {
 
 @media (max-width: 1024px) {
   ul.video-description {
-    padding-left: 0;
+    padding-left: 20px;
   }
 }
 
