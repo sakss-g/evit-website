@@ -168,6 +168,11 @@ html {
   transition: all 0.3s;
   text-decoration: none;
 }
+@media (max-width: 767px) {
+  .book a {
+    font-size: 1.3rem;
+  }
+}
 
 .book a:hover {
   background-color: #c27100;
@@ -242,14 +247,14 @@ html {
 }
 @media (max-width: 767px) {
   .video-text-buttons {
-    width: 50%;
+    width: 50% !important;
     margin: 25px 0 25px 25px;
     font-size: 1.3rem;
   }
 }
 @media (max-width: 480px) {
   .video-text-buttons {
-    width: 65%;
+    width: 65% !important;
   }
 }
 @media (max-width: 533px) {
@@ -264,7 +269,7 @@ html {
 }
 @media (max-width: 1024px) {
   .video-text-buttons {
-    width: 63%;
+    width: 62%;
   }
 }
 
@@ -789,7 +794,7 @@ input[type=checkbox] {
     width: 100%;
     padding-left: 0;
     margin-right: 15px;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
 }
 
@@ -1063,7 +1068,7 @@ input[type=checkbox] {
 }
 @media (max-width: 767px) {
   .video-button-container {
-    padding: 150px;
+    padding: 150px !important;
     margin: auto auto;
   }
 }
@@ -1079,7 +1084,7 @@ input[type=checkbox] {
 }
 @media (max-width: 900px) {
   .video-button-container {
-    padding: 80px 103px !important;
+    padding: 80px 103px;
   }
 }
 @media (max-width: 1200px) {
@@ -1178,6 +1183,11 @@ input[type=checkbox] {
   flex-direction: column;
   border: solid 3px #CCCCCC;
 }
+@media (max-width: 1200px) {
+  .review-container {
+    width: 90%;
+  }
+}
 
 .reviews {
   height: 80%;
@@ -1209,6 +1219,11 @@ input[type=checkbox] {
   display: flex;
   flex-direction: row;
 }
+@media (max-width: 1200px) {
+  .review-wrapper {
+    width: 90%;
+  }
+}
 
 .review {
   height: 327px;
@@ -1239,6 +1254,11 @@ input[type=checkbox] {
   display: flex;
   justify-content: center;
   padding: 20px 180px 0;
+}
+@media (max-width: 1400px) {
+  .idea-wrapper {
+    padding: 20px 0 0;
+  }
 }
 
 .idea-box .idea {

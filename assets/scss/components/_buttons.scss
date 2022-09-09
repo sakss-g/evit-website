@@ -7,6 +7,10 @@
     font-weight: 500;
     transition: all .3s;
     text-decoration: none;
+
+    @include for-mobile{
+        font-size: 1.3rem;
+    }
 }
 
 .book a:hover{
@@ -77,13 +81,13 @@
     margin-left: 40px;
 
     @include for-mobile{
-        width: 50% ;
+        width: 50% !important;
         margin: 25px 0 25px 25px;
         font-size: 1.3rem;
     }
     
     @include for-phone-only{
-        width: 65% ;
+        width: 65% !important;
     }
 
     @include extra{
@@ -95,7 +99,7 @@
     }
 
     @include for-desktop-small{
-        width: 63%;
+        width: 62%;
     }
 }
 

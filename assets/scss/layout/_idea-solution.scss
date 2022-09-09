@@ -25,6 +25,10 @@
     display: flex;
     justify-content: center;
     padding: 20px 180px 0;
+
+    @include for-desktop{
+        padding: 20px 0 0;
+    }
 }
 
 .idea-box .idea{

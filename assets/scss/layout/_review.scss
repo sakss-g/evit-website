@@ -12,6 +12,10 @@
     flex-direction: column;
     border: solid 3px #CCCCCC;
 
+    @include for-desktop-up{
+        width: 90%;   
+    }
+
 }
 
 .reviews{
@@ -43,6 +47,10 @@
     margin: auto auto;
     display: flex;
     flex-direction: row;
+
+    @include for-desktop-up{
+        width: 90%;
+    }
 }
 
 .review{

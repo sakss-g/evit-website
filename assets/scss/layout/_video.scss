@@ -61,7 +61,7 @@
     transition: all 0.5s;
 
     @include for-mobile{
-        padding: 150px;
+        padding: 150px !important;
         margin: auto auto;
     }
 
@@ -74,7 +74,7 @@
     }
 
     @include for-tablet-landscape-up{
-        padding: 80px 103px !important;
+        padding: 80px 103px ;
     }
 
     @include for-desktop-up{
