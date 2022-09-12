@@ -191,6 +191,17 @@ html {
   margin-right: 0;
   width: auto;
 }
+@media (max-width: 767px) {
+  .btns {
+    padding-bottom: 10px;
+    font-size: 1.3rem;
+  }
+}
+@media (max-width: 1400px) {
+  .btns {
+    padding-bottom: 10px;
+  }
+}
 
 .banner-buttons {
   display: flex;
@@ -563,8 +574,13 @@ html {
 
 .protection-heading p {
   font-family: "Ubuntu", sans-serif;
-  font-size: 17px;
+  font-size: 1.2rem;
   margin: 0;
+}
+@media (max-width: 767px) {
+  .protection-heading p {
+    font-size: 1.4rem;
+  }
 }
 
 .protection-body ul {
@@ -574,10 +590,15 @@ html {
 
 .protection-body li {
   list-style: none;
-  margin-top: 20px;
+  margin-top: 1.5rem;
   font-family: "Ubuntu", sans-serif;
   font-weight: 300;
   line-height: 1.5;
+}
+@media (max-width: 767px) {
+  .protection-body li {
+    font-size: 1.5rem;
+  }
 }
 
 .contact-heading h1 {
@@ -1289,6 +1310,11 @@ input[type=checkbox] {
   flex-wrap: wrap;
   padding: 15px 15px;
 }
+@media (max-width: 1400px) {
+  .inspiration-body {
+    padding-left: 50px !important;
+  }
+}
 
 .inspiration-img-wrapper {
   display: flex;
@@ -1321,6 +1347,11 @@ input[type=checkbox] {
   margin-left: 15px;
   border-radius: 5px;
   transition: all 0.3s;
+}
+@media (max-width: 1400px) {
+  .inspiration-img-wrapper {
+    width: 31.5% !important;
+  }
 }
 
 .inspiration-img-wrapper:hover.inspiration-img-wrapper::after {
@@ -1385,9 +1416,19 @@ input[type=checkbox] {
   display: flex;
   flex-direction: row;
 }
+@media (max-width: 767px) {
+  .protection-section {
+    flex-direction: column;
+  }
+}
 
 .protection-img-container {
   width: 51%;
+}
+@media (max-width: 767px) {
+  .protection-img-container {
+    width: 100%;
+  }
 }
 
 .protection-text-container {
@@ -1395,11 +1436,22 @@ input[type=checkbox] {
   display: flex;
   justify-content: center;
 }
+@media (max-width: 767px) {
+  .protection-text-container {
+    width: 100%;
+  }
+}
 
 .protection-text {
   height: 70%;
   width: 80%;
   margin-top: 130px;
+}
+@media (max-width: 1200px) {
+  .protection-text {
+    margin-top: 20px;
+    width: 90%;
+  }
 }
 
 .protection-body {
@@ -1411,6 +1463,11 @@ input[type=checkbox] {
   flex-wrap: wrap;
   width: 90%;
   height: 20%;
+}
+@media (max-width: 1400px) {
+  .protection-buttons {
+    width: 100%;
+  }
 }
 
 .contact-section {

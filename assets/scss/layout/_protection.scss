@@ -1,23 +1,42 @@
+@import '../responsive';
+
 .protection-section{
     overflow: hidden;
     display: flex;
     flex-direction: row;
+    
+    @include for-mobile{
+        flex-direction: column;
+    }
 }
 
 .protection-img-container{
     width: 51%;
+
+    @include for-mobile{
+        width: 100%;
+    }
 }
 
 .protection-text-container{
     width: 49%;
     display: flex;
     justify-content: center;
+
+    @include for-mobile{
+        width: 100%;
+    }
 }
 
 .protection-text{
     height: 70%;
     width: 80%;
-    margin-top: 130px;  
+    margin-top: 130px; 
+    
+    @include for-desktop-up{
+        margin-top: 20px;
+        width: 90%;
+    }
 }
 
 .protection-body{
@@ -30,4 +49,8 @@
     flex-wrap: wrap;
     width: 90%;
     height: 20%;
+
+    @include for-desktop{
+        width: 100%;
+    }
 }

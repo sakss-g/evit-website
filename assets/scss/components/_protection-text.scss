@@ -1,7 +1,13 @@
+@import '../responsive';
+
 .protection-heading p{
     font-family: 'Ubuntu', sans-serif;
-    font-size: 17px;
+    font-size: 1.2rem;
     margin: 0;
+
+    @include for-mobile{
+        font-size: 1.4rem;
+    }
 }
 .protection-body ul{
     padding-left: 0;
@@ -10,8 +16,12 @@
 
 .protection-body li{
     list-style: none;
-    margin-top: 20px;
+    margin-top: 1.5rem;
     font-family: 'Ubuntu', sans-serif;
     font-weight: 300;
     line-height: 1.5;
+
+    @include for-mobile{
+        font-size: 1.5rem;
+    }
 }

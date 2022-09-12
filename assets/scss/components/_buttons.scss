@@ -30,6 +30,15 @@
     display: flex;
     margin-right: 0;
     width: auto;
+
+    @include for-mobile{
+        padding-bottom: 10px;
+        font-size: 1.3rem;
+    }
+
+    @include for-desktop{
+        padding-bottom: 10px;
+    }
 }
 
 .banner-buttons{

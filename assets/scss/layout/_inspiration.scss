@@ -18,6 +18,10 @@
     display: flex;
     flex-wrap: wrap;
     padding: 15px 15px;
+
+    @include for-desktop{
+        padding-left: 50px !important;
+    }
 }
 
 .inspiration-img-wrapper{
@@ -55,6 +59,10 @@
         margin-left: 15px;
         border-radius: 5px;
         transition: all .3s;
+    }
+
+    @include for-desktop{
+        width: 31.5% !important;
     }
 }
 
