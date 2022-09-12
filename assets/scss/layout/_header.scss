@@ -50,17 +50,17 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    height: 50px;
-    padding: 15px 110px;
-    margin: auto 35px;
-    justify-content: space-between;
+    height: auto;
+    padding: 15px 0;
+    margin: auto auto;
+    // justify-content: space-between;
     font-family: 'Ubuntu', sans-serif;
     font-weight: 300;
 
-    @include for-mobile{
-        margin: 0 0;
-        padding: 0 5px;
-    }
+    // @include for-mobile{
+    //     margin: 0 0;
+    //     padding: 0 5px;
+    // }
 //     @include for-small-screen{
 //         margin: 0 0;
 //         padding: 0 5px;
@@ -80,13 +80,14 @@
 .logo-container{
     display: flex;
     align-items: center;
+    margin-left: 100px;
 }
 
 .menu-items{
     display:flex;
     list-style: none;
     justify-content: space-between;
-    width: 50%;
+    width: auto;
     align-items: center;
     margin: 0;
 }

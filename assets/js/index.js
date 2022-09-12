@@ -70,4 +70,22 @@ jQuery( document ).ready( function(){
         $grid.isotope({ filter: filterValue });
     });
 
+
+    jQuery(window).resize(function(){
+        if(jQuery(window).width() <= 768) {
+            jQuery('.footer-info ul').addClass('fhide');
+            jQuery('.footer-contact ul').addClass('fhide');
+        }else{
+            jQuery('.footer-info ul').removeClass('fhide');
+            jQuery('.footer-contact ul').removeClass('fhide');
+        }
+    });
+
+    jQuery('.footer-info-header .fa-circle-plus').click(function(){
+        jQuery('.footer-info ul').toggleClass('fhide');
+    });
+
+    jQuery('.footer-contact-header .fa-circle-plus').click(function(){
+        jQuery('.footer-contact ul').toggleClass('fhide');
+    });
 });

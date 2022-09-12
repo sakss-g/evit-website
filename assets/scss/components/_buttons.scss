@@ -28,47 +28,22 @@
 .btns{
     align-items: center;
     display: flex;
-    margin-right: 0;
     width: auto;
 
     @include for-mobile{
-        padding-bottom: 10px;
         font-size: 1.3rem;
-    }
-
-    @include for-desktop{
-        padding-bottom: 10px;
     }
 }
 
 .banner-buttons{
     display: flex;
-    justify-content: space-between;
-    width: 55%;
+    width: 100%;
     height: 55px;
-    margin-top: 25px;
-    margin-left: 40px;
+    margin: auto auto;
+    margin-left: 65px;
 
     @include for-mobile{
-        width: 70% !important;
         margin: 25px auto;
-        font-size: 1.3rem;
-    }
-
-    @include for-desktop{
-        width: 65%;
-    }
-
-    @include for-desktop-up{
-        width: 50%;
-    }
-
-    @include for-desktop-small{
-        width: 50%;
-    }
-    
-    @include for-phone-only{
-        width: 90% !important;
     }
 }
 
@@ -79,37 +54,14 @@
     border: 2px solid #FFFFFF;
     color: #FFFFFF;
     text-decoration: none;
+    margin-left: 20px;
 }
 
 .video-text-buttons{
     display: flex;
-    justify-content: space-between;
-    width: 51%;
+    width: 100%;
     height: 55px;
-    margin-top: 15px;
-    margin-left: 40px;
-
-    @include for-mobile{
-        width: 50% !important;
-        margin: 25px 0 25px 25px;
-        font-size: 1.3rem;
-    }
-    
-    @include for-phone-only{
-        width: 65% !important;
-    }
-
-    @include extra{
-        width: 68%;
-    }
-    
-    @include for-desktop{
-        width: 55.5%;
-    }
-
-    @include for-desktop-small{
-        width: 62%;
-    }
+    margin: 15px 30px;
 }
 
 .book-home-visit-video a{
@@ -119,7 +71,7 @@
     border: 2px solid #000;
     color: #000;
     text-decoration: none;
-    margin-left: 10px;
+    margin-left: 20px;
 }
 
 .book-home-visit-idea{
@@ -127,6 +79,10 @@
     justify-content: center;
     padding: 25px 0 5px 0;
     font-weight: 400;
+}
+
+.decor{
+    padding-bottom: 15px;
 }
 
 .decor a{
@@ -137,12 +93,21 @@
     border: 2px solid #000;
     color: #000;
     text-decoration: none;
-    margin-right: 10px;
+    margin-right: 20px;
     text-align: center;
+
+    @include for-phone-only{
+        margin-right: 14px;
+    }
 }
 
 .contact-details{
     margin-top: 5px;
+    text-align: right;
+
+    @include for-mobile{
+        text-align: left;
+    }
 }
 
 .contact-details .disable-btn{
@@ -158,4 +123,8 @@
 .disable-btn:hover{
     cursor: pointer;
     background-color: #c27100;
+}
+
+.book-home-visit{
+    margin-left: 20px;
 }

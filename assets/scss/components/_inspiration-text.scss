@@ -2,26 +2,48 @@
     font-family: 'Ubuntu', sans-serif;
     font-weight: unset;
     margin-bottom: 10px;
+
+    @include for-mobile{
+        font-size: 1.3rem;
+        margin-left: 3px;
+    }
 }
 
 .inspiration-heading h1{
     width: 40%;
-    font-size: 36px;
+    font-size: 2.3rem;
     margin-top: 0;
     line-height: 1.3;
+
+    @include for-desktop-up{
+        width: 85%;
+
+    }
 }
 
 .inspiration-category ul{
     width: 45%;
     padding: 0;
+
+    @include for-desktop-up{
+        width: auto;
+    }
 }
 
 .inspiration-category ul{
     display: flex;
     list-style: none;
     justify-content: space-between;
-    font-size: 16px;
+    font-size: 1.1rem;
     font-weight: 400;
+
+    @include for-phone-only{
+        display: block;
+    }
+
+    @include for-mobile{
+        font-size: 1.3rem;
+    }
 }
 
 .inspiration-category a{
@@ -40,15 +62,31 @@
     font-size: 15px;
     list-style: none;
     display: inline;
+
+    @include extra{
+        font-size: 11px;
+    }
+
+    @include for-phone-only{
+        font-size: 8px;
+    }
 }
 
 .image-overlay-text ul li+li:before {
     padding: 8px;
     color: black;
     content: "/\a";
-  }
+}
 
 .inspiration-link h3{
     font-size: 16px;
     margin: 7px 0;
+
+    @include extra{
+        font-size: 11px;
+    }
+
+    @include for-phone-only{
+        font-size: 8px;
+    }
 }

@@ -1,45 +1,70 @@
-.footer-desc h3{
+.footer-desc h3, .footer-info h3, .footer-contact h3{
     margin: 5px;
     padding-left: 6px;
-    font-size: 20px;
+    font-size: 1.4rem;
     font-weight: 900;
+
+    @include for-tablet-landscape-up{
+        font-size: 1.6rem;
+    }
 }
+
+// .footer-info h3{
+//     margin-right: 70%;
+// }
+
+// .footer-contact h3{
+//     margin-right: 69.1%;
+// }
 
 .footer-desc ul{
     margin-top: 30px;
+
+    @include for-tablet-landscape-up{
+        margin-top: 5px;
+    }
 }
 
 .footer-desc ul li{
     list-style: none;
     padding: 10px 0 10px 0;
     font-family: 'Ubuntu', sans-serif;
-    font-size: 15px;
-}
+    font-size: 1rem;
 
-.footer-info h3{
-    padding-left: 8px;
-    margin: 5px;
-    font-size: 20px;
-    font-weight: 900;
+    @include for-tablet-landscape-up{
+        font-size: 1.6rem;
+    }
 }
 
 .footer-info ul{
-    padding-left: 15px;
+    padding-left: 1rem;
     margin-top: 30px;
+
+    @include for-tablet-landscape-up{
+        margin-top: 5px;
+    }
 }
 
 .footer-info ul li{
     list-style: none;
     padding: 10px 0 10px 0;
     font-family: 'Ubuntu', sans-serif;
-    font-size: 15px;
+    font-size: 1rem;
+
+    @include for-tablet-landscape-up{
+        font-size: 1.6rem;
+    }
 }
 
 .footer-info ul li a {
     color: #FFFFFF;
     text-decoration: none;
     font-family: 'Ubuntu', sans-serif;
-    font-size: 15px;
+    font-size: 1rem;
+
+    @include for-tablet-landscape-up{
+        font-size: 1.6rem;
+    }
 }
 
 .footer-info ul li a:hover{
@@ -48,30 +73,35 @@
     transition: all 500ms ease;
 }
 
-.footer-contact h3{
-    padding-left: 8px;
-    margin: 5px;
-    font-size: 20px;
-    font-weight: 900;
-}
-
 .footer-contact ul{
     padding-left: 16px;
     margin-top: 30px;
+
+    @include for-tablet-landscape-up{
+        margin-top: 5px;
+    }
 }
 
 .footer-contact ul li{
     list-style: none;
     padding: 10px 0 5px 0;
     font-family: 'Ubuntu', sans-serif;
-    font-size: 15px;
+    font-size: 1rem;
+
+    @include for-tablet-landscape-up{
+        font-size: 1.6rem;
+    }
 }
 
 .footer-contact ul li a {
     color: #FFFFFF;
     text-decoration: none;
     font-family: 'Ubuntu', sans-serif;
-    font-size: 15px;
+    font-size: 1rem;
+
+    @include for-tablet-landscape-up{
+        font-size: 1.6rem;
+    }
 }
 
 .footer-contact ul li a:hover{
@@ -82,4 +112,8 @@
 
 .footer-contact .address{
     padding-left: 22px;
+}
+
+.fhide{
+    display: none;
 }

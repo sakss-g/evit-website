@@ -5,3 +5,23 @@
 .slick-list.draggable {
     margin-right: 15px;
 }
+
+.reviews .slick-next{
+    right: -10px;
+}
+
+.reviews .slick-prev{
+    left: -17px;
+}
+
+.inspiration-category .slick-next{
+    display: none !important;
+}
+
+.inspiration-category .slick-prev{
+    display: none !important;
+}
+
+.inspiration-category .slick-slide{
+    width: auto !important;
+}

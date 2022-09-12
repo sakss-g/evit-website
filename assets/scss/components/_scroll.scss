@@ -10,6 +10,10 @@
     font-size: 12px;
     transition: all .3Ss;
     bottom: 30px;
+
+    @include for-mobile{
+        bottom: 20px;
+    }
 }
 
 .remove{

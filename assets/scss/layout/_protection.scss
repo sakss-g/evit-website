@@ -11,21 +11,13 @@
 }
 
 .protection-img-container{
-    width: 51%;
-
-    @include for-mobile{
-        width: 100%;
-    }
+    width: 100%;
 }
 
 .protection-text-container{
-    width: 49%;
+    width: 100%;
     display: flex;
     justify-content: center;
-
-    @include for-mobile{
-        width: 100%;
-    }
 }
 
 .protection-text{
@@ -47,10 +39,6 @@
 .protection-buttons{
     display: flex;
     flex-wrap: wrap;
-    width: 90%;
-    height: 20%;
-
-    @include for-desktop{
-        width: 100%;
-    }
+    width: 100%;
+    height: auto;
 }

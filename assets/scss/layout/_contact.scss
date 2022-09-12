@@ -11,6 +11,10 @@
     height: 95%;
     margin: auto auto;
     z-index: 10;
+
+    @include for-mobile{
+        width: 100%;
+    }
 }
 
 .contact-heading{
@@ -26,6 +30,18 @@ form{
     margin-top: 45px;
     padding: 25px 0;
     text-align: center;
+    
+    @include for-mobile{
+        width: 75%;
+    }
+
+    @include extra{
+        width: 95%;
+    }
+
+    @include for-desktop-up{
+        width: 85%;
+    }
 }
 
 .form-wrapper{
@@ -33,12 +49,23 @@ form{
     margin: 0 auto;
     width: 62%;
     height: auto;
+
+    @include for-mobile{
+        width: 80%;
+    }
+
+    @include for-desktop-up{
+        width: 85%;
+    }
 }
 
 .info-container{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+
+    @include for-mobile{
+        flex-direction: column;
+    }
 }
 
 .place-container, .text-area{
@@ -48,6 +75,10 @@ form{
 .form-checkbox-button{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    box-sizing: border-box;
     margin-bottom: 15px;
+
+    @include for-mobile{
+        flex-direction: column;
+    }
 }

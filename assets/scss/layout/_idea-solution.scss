@@ -38,4 +38,8 @@
     padding: 0 10px;
     margin: 0;
     width: 235px;
+
+    @include for-mobile{
+        padding-left: 40px;
+    }
 }
