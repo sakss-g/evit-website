@@ -88,4 +88,26 @@ jQuery( document ).ready( function(){
     jQuery('.footer-contact-header .fa-circle-plus').click(function(){
         jQuery('.footer-contact ul').toggleClass('fhide');
     });
+
+    const menuItems = document.querySelector('.menu-items');
+    jQuery('.fa-bars').click(function(){
+        jQuery( '.menu-items' ).addClass( 'hshow' );
+        jQuery( '.scroll-to-top' ).addClass( 'remove' );
+    });
+
+    jQuery('.fa-xmark').click(function(){
+        if(jQuery(window).width() <= 1024) {
+            console.log('aaaaaaaaa');
+            jQuery( '.menu-items' ).removeClass( 'hshow' );
+            jQuery( '.menu-items' ).addClass( 'hhide' );
+        }
+    });
+
+    jQuery(window).resize(function(){
+        if(jQuery(window).width() >= 1024) {
+            console.log('sssssssss');
+            jQuery( '.menu-items' ).removeClass( 'hhide' );
+
+        }
+    });
 });

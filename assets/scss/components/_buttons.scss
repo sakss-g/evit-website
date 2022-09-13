@@ -47,6 +47,15 @@
     }
 }
 
+.book-home-visit{
+    margin-left: 20px;
+    margin-right: 90px;
+
+    @include for-desktop-up{
+        margin-right: 0;
+    }
+}
+
 .book-home-visit-banner a{
     font-family: 'Ubuntu', sans-serif;
     font-weight: 400;
@@ -125,6 +134,3 @@
     background-color: #c27100;
 }
 
-.book-home-visit{
-    margin-left: 20px;
-}

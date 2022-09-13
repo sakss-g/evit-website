@@ -33,3 +33,18 @@
     margin-left: 10px;
     font-family: 'Ubuntu', sans-serif;
 }
+
+.review-text{
+    padding: 8px 5px 8px 5px;
+    text-align: center;
+    width: 73%;
+    font-size: 0.9rem;
+
+    @include for-mobile{
+        font: 1.2rem;
+    }
+}
+
+.review.slick-slide{
+    width: 1%;
+}

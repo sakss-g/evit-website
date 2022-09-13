@@ -123,7 +123,7 @@ html {
 }
 
 .review img {
-  height: 50%;
+  height: 15%;
   padding: 8px 5px 8px 5px;
 }
 
@@ -214,6 +214,16 @@ html {
   }
 }
 
+.book-home-visit {
+  margin-left: 20px;
+  margin-right: 90px;
+}
+@media (max-width: 1200px) {
+  .book-home-visit {
+    margin-right: 0;
+  }
+}
+
 .book-home-visit-banner a {
   font-family: "Ubuntu", sans-serif;
   font-weight: 400;
@@ -292,10 +302,6 @@ html {
 .disable-btn:hover {
   cursor: pointer;
   background-color: #c27100;
-}
-
-.book-home-visit {
-  margin-left: 20px;
 }
 
 .text-container h1 {
@@ -443,6 +449,22 @@ html {
   margin-top: 10px;
   margin-left: 10px;
   font-family: "Ubuntu", sans-serif;
+}
+
+.review-text {
+  padding: 8px 5px 8px 5px;
+  text-align: center;
+  width: 73%;
+  font-size: 0.9rem;
+}
+@media (max-width: 767px) {
+  .review-text {
+    font: 1.2rem;
+  }
+}
+
+.review.slick-slide {
+  width: 1%;
 }
 
 .idea-solution-heading p {
@@ -905,8 +927,14 @@ input[type=checkbox] {
   height: auto;
   padding: 15px 0;
   margin: auto auto;
+  justify-content: space-around;
   font-family: "Ubuntu", sans-serif;
   font-weight: 300;
+}
+@media (max-width: 1024px) {
+  .menu-header {
+    justify-content: space-between;
+  }
 }
 
 .main-header.scroll {
@@ -915,13 +943,19 @@ input[type=checkbox] {
   padding-top: 0;
 }
 .main-header.scroll .menu-header {
-  padding-top: 5px;
+  padding-top: 8px;
+  padding-bottom: 5px;
 }
 
 .logo-container {
   display: flex;
   align-items: center;
-  margin-left: 100px;
+  margin-left: 90px;
+}
+@media (max-width: 1400px) {
+  .logo-container {
+    margin-left: 0;
+  }
 }
 
 .menu-items {
@@ -931,6 +965,7 @@ input[type=checkbox] {
   width: auto;
   align-items: center;
   margin: 0;
+  width: 55%;
 }
 
 .menu-items a {
@@ -1060,7 +1095,7 @@ input[type=checkbox] {
     width: 100%;
   }
 }
-@media (max-width: 1200px) {
+@media (max-width: 1400px) {
   .text-container {
     width: 100%;
   }
@@ -1305,7 +1340,7 @@ input[type=checkbox] {
 }
 
 .review {
-  height: 327px;
+  height: auto;
 }
 
 .idea-solution-section {
@@ -1366,7 +1401,7 @@ input[type=checkbox] {
   padding-top: 35px;
   margin: 0 120px;
 }
-@media (max-width: 1200px) {
+@media (max-width: 1400px) {
   .inspiration-heading {
     width: 100%;
     margin: auto 20px;
@@ -1494,7 +1529,7 @@ input[type=checkbox] {
   margin: 0 120px;
   font-family: "Ubuntu", sans-serif;
 }
-@media (max-width: 1200px) {
+@media (max-width: 1400px) {
   .inspiration-category {
     margin: 0 20px;
   }
@@ -1706,7 +1741,7 @@ form {
 
 .footer-logo {
   height: 100%;
-  width: auto;
+  width: 70%;
   margin: 0 auto;
 }
 @media (max-width: 900px) {
@@ -1717,7 +1752,7 @@ form {
 
 .footer-desc {
   height: 100%;
-  width: auto;
+  width: 100%;
   margin: 0 auto;
 }
 @media (max-width: 900px) {
@@ -1795,6 +1830,63 @@ form {
 
 .inspiration-category .slick-slide {
   width: auto !important;
+}
+
+.open-menu {
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+  padding-top: 18px;
+  padding-right: 10px;
+  display: none;
+}
+
+.close-menu {
+  color: white;
+  display: none;
+  cursor: pointer;
+  font-size: 2rem;
+}
+
+@media (max-width: 1024px) {
+  .menu-items {
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    padding: 0;
+    z-index: 50;
+    flex-direction: column;
+    justify-content: center;
+    transition: top 1s ease;
+    display: none;
+    background-color: #000000;
+    color: #FFFFFF;
+  }
+  .menu-items li {
+    font-size: 2rem;
+  }
+  .close-menu {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 25px;
+  }
+  .open-menu {
+    display: block;
+  }
+  .book-home-visit {
+    display: none;
+  }
+}
+.hhide {
+  display: none;
+}
+
+.hshow {
+  display: flex;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,63 @@
+@import '../responsive';
+
+.open-menu{
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+    padding-top: 18px;
+    padding-right: 10px;
+    display: none;
+}
+
+.close-menu{
+    color: white;
+    display: none;
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+@media(max-width: 1024px){
+    .menu-items{
+        height: 100vh;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        padding: 0;
+        z-index: 50;
+        flex-direction: column;
+        justify-content: center;
+        transition: top 1s ease;
+        display: none;
+        background-color: #000000;
+        color: #FFFFFF;
+    }
+
+    .menu-items li{
+        font-size: 2rem;
+    }
+
+    .close-menu{
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 25px;
+    }
+
+    .open-menu{
+        display: block;
+    }
+
+    .book-home-visit{
+        display: none;
+    }
+}
+
+.hhide{
+    display: none;
+}
+
+.hshow{
+    display: flex;
+}

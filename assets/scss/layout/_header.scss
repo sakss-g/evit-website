@@ -53,18 +53,13 @@
     height: auto;
     padding: 15px 0;
     margin: auto auto;
-    // justify-content: space-between;
+    justify-content: space-around;
     font-family: 'Ubuntu', sans-serif;
     font-weight: 300;
 
-    // @include for-mobile{
-    //     margin: 0 0;
-    //     padding: 0 5px;
-    // }
-//     @include for-small-screen{
-//         margin: 0 0;
-//         padding: 0 5px;
-//     }
+    @include for-desktop-small{
+        justify-content: space-between;
+    }
 }
 
 .main-header.scroll{
@@ -73,14 +68,19 @@
     padding-top: 0;
 
     .menu-header{
-        padding-top: 5px;
+        padding-top: 8px;
+        padding-bottom: 5px;
     }
 }
 
 .logo-container{
     display: flex;
     align-items: center;
-    margin-left: 100px;
+    margin-left: 90px;
+
+    @include for-desktop{
+        margin-left: 0;
+    }
 }
 
 .menu-items{
@@ -90,6 +90,7 @@
     width: auto;
     align-items: center;
     margin: 0;
+    width: 55%;
 }
 
 .menu-items a{
