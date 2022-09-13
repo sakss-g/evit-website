@@ -39,9 +39,13 @@
     text-align: center;
     width: 73%;
     font-size: 0.9rem;
+    margin: auto auto;
+
 
     @include for-mobile{
-        font: 1.2rem;
+        font-size: 1.4rem;
+        width: 66%;
+        margin: auto auto;
     }
 }
 

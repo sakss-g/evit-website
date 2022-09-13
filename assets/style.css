@@ -125,6 +125,7 @@ html {
 .review img {
   height: 15%;
   padding: 8px 5px 8px 5px;
+  margin: auto auto;
 }
 
 .contact-items .fa-phone {
@@ -456,10 +457,13 @@ html {
   text-align: center;
   width: 73%;
   font-size: 0.9rem;
+  margin: auto auto;
 }
 @media (max-width: 767px) {
   .review-text {
-    font: 1.2rem;
+    font-size: 1.4rem;
+    width: 66%;
+    margin: auto auto;
   }
 }
 
