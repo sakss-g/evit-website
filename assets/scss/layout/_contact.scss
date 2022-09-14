@@ -21,6 +21,10 @@
     width: 80%;
     margin: auto auto;
     text-align: center;
+
+    @include for-mobile{
+        width: 100%;
+    }
 }
 
 form{

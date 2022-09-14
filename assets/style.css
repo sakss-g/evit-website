@@ -642,27 +642,27 @@ html {
 }
 
 .contact-heading h1 {
-  font-size: 37px;
+  font-size: 2.8rem;
   padding-bottom: 5px;
 }
 
 .contact-heading p {
   margin: 0;
   padding-bottom: 10px;
-  font-size: 15px;
+  font-size: 1.2rem;
   font-weight: 400;
 }
 
 form p {
   color: #FFFFFF;
   font-family: "Ubuntu", sans-serif;
-  font-size: 18px;
+  font-size: 1.3rem;
   font-weight: 300;
 }
 
 input, textarea {
   border: none;
-  font-size: 17px;
+  font-size: 1.3rem;
   font-family: "Ubuntu", sans-serif;
   color: #000000;
 }
@@ -708,7 +708,7 @@ input, textarea {
 
 .checkbox-container p {
   font-family: "Ubuntu", sans-serif;
-  font-size: 16px;
+  font-size: 1.1rem;
   margin-left: 5px;
 }
 
@@ -1638,6 +1638,11 @@ input[type=checkbox] {
   width: 80%;
   margin: auto auto;
   text-align: center;
+}
+@media (max-width: 767px) {
+  .contact-heading {
+    width: 100%;
+  }
 }
 
 form {
