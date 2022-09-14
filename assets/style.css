@@ -550,9 +550,10 @@ html {
   font-size: 1.1rem;
   font-weight: 400;
 }
-@media (max-width: 480px) {
+@media (max-width: 767px) {
   .inspiration-category ul {
-    display: block;
+    overflow: auto;
+    white-space: nowrap;
   }
 }
 @media (max-width: 767px) {
@@ -564,6 +565,7 @@ html {
 .inspiration-category a {
   text-decoration: none;
   color: #000000;
+  display: inline-block;
 }
 
 .image-overlay-text ul {
@@ -1295,7 +1297,7 @@ input[type=checkbox] {
 
 .review-container {
   width: 83%;
-  height: 220px;
+  height: auto;
   margin: 20px auto 45px;
   display: flex;
   flex-direction: column;
@@ -1536,6 +1538,11 @@ input[type=checkbox] {
 @media (max-width: 1400px) {
   .inspiration-category {
     margin: 0 20px;
+  }
+}
+@media (max-width: 767px) {
+  .inspiration-category {
+    margin: 0 0 0 6px;
   }
 }
 

@@ -139,6 +139,10 @@
     @include for-desktop{
         margin: 0 20px;
     }
+
+    @include for-mobile{
+        margin: 0 0 0 6px;
+    }
 }
 
 .inspiration-category a{

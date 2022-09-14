@@ -25,6 +25,7 @@
     display: flex;
     justify-content: center;
     padding: 20px 180px 0;
+    // overflow-x: auto;
 
     @include for-desktop{
         padding: 20px 0 0;

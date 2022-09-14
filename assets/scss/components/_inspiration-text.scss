@@ -37,8 +37,9 @@
     font-size: 1.1rem;
     font-weight: 400;
 
-    @include for-phone-only{
-        display: block;
+    @include for-mobile{
+        overflow: auto;
+        white-space: nowrap;
     }
 
     @include for-mobile{
@@ -49,6 +50,7 @@
 .inspiration-category a{
     text-decoration: none;
     color: #000000;
+    display: inline-block;
 }
 
 .image-overlay-text ul{

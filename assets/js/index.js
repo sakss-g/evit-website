@@ -97,7 +97,6 @@ jQuery( document ).ready( function(){
 
     jQuery('.fa-xmark').click(function(){
         if(jQuery(window).width() <= 1024) {
-            console.log('aaaaaaaaa');
             jQuery( '.menu-items' ).removeClass( 'hshow' );
             jQuery( '.menu-items' ).addClass( 'hhide' );
         }
@@ -105,9 +104,7 @@ jQuery( document ).ready( function(){
 
     jQuery(window).resize(function(){
         if(jQuery(window).width() >= 1024) {
-            console.log('sssssssss');
             jQuery( '.menu-items' ).removeClass( 'hhide' );
-
         }
     });
 });
